@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from pathlib import Path
 
-from asdc.analysis.report import process_row
+from asdc.analysis.report import load_session
 
 # session keys and sample ids to exclude from analysis
 # (for insufficient data quality)
@@ -13,11 +13,6 @@ drop_ids = {
     "zinni2-2020-11-24": [28, 34, 38],
     "zinni3_1-2020-12-21": [],
 }
-
-
-def load_session(x):
-    print(x)
-    return "x"
 
 
 if __name__ == "__main__":
