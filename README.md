@@ -3,7 +3,7 @@
 This is a paper companion repository containing data analysis and visualization code reproducing the analysis in our Zn-Ni pH series work.
 
 ```sh
-python src/generate_report.py
+python scripts/generate_report.py
 ```
 
 ## Contact Information
