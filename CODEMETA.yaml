@@ -202,7 +202,8 @@ themes:
   #     - Systems integration
   #     - Technology commercialization
   #
-  # - Materials
+  - Materials
+      - Metals
   #     - Ceramics
   #     - Composites
   #     - Concrete and cement
@@ -211,7 +212,7 @@ themes:
   #         - Magnetic properties
   #         - Mechanical properties
   #         - Thermal properties
-  #     - Metals
+
   #     - Modeling and computational material science
   #     - Polymers
   #     - Superconductors
