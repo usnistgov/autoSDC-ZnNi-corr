@@ -1,0 +1,225 @@
+[
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "H2SO4": 1,
+        "K2SO4": 0
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -10
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "H2SO4": 0.1,
+        "K2SO4": 0.9
+      },
+      "purge_time": 120
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -20
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "H2SO4": 0.01,
+        "K2SO4": 0.99
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -30
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "H2SO4": 0.001,
+        "K2SO4": 0.999
+      },
+      "purge_time":120
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -40
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "K2SO4": 1
+      },
+      "purge_time": 120
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -50
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "KOH": 0.001,
+        "K2SO4": 0.999
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -60
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "KOH": 0.01,
+        "K2SO4": 0.99
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -70
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "KOH": 0.1,
+        "K2SO4": 0.9
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ],
+  [
+    {
+      "intent": "corrosion",
+      "x": 0,
+      "y": -80
+    },
+    {
+      "op": "set_flow",
+      "pH": 10,
+      "flow_rate": 1.25,
+      "relative_rates": {
+        "KOH": 1
+      },
+      "purge_time": 90
+    },
+    {
+      "op": "open_circuit",
+      "duration": 1800,
+      "stabilization_range": 0.002,
+      "stabilization_window": 90,
+      "minimum_duration": 300,
+      "smoothing_window": 10
+    }
+  ]
+]

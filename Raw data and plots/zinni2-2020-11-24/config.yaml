@@ -1,0 +1,58 @@
+data_dir:
+figure_dir:
+db_file: sdc.db
+target_file: map.csv
+command_logfile: commands.log
+
+notify_slack: true
+plot_slack: true
+test: false
+
+solutions:
+    0: {'KOH': 1.0}
+    1: {'K2SO4': 1.0}
+    2: {'H2SO4': 1.0}
+
+syringe_diamater: 29.5
+
+frame_orientation: '-y'
+pump_array_port: 'COM12'
+camera_index: 2
+
+default_experiment: >
+  [{"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10},
+   {"op": "lpr", "initial_potential": -0.012, "final_potential": 0.012, "step_height": 0.0001, "step_time": 0.8, "current_range": "20UA"},
+   {"op": "lpr", "initial_potential": -0.012, "final_potential": 0.012, "step_height": 0.0001, "step_time": 0.8, "current_range": "20UA"},
+   {"op": "lpr", "initial_potential": -0.012, "final_potential": 0.012, "step_height": 0.0001, "step_time": 0.8, "current_range": "20UA"},
+   {"op": "tafel", "initial_potential": -0.25, "final_potential": 0.25, "step_height": 0.005, "step_time": 1, "current_range": "200UA"},
+   {"op": "cv", "initial_potential": -1.3, "vertex_potential_1": 0.5, "vertex_potential_2": -1.3, "final_potential": 0.5, "scan_rate": 0.075, "cycles": 2, "current_range": "2MA"}]
+
+default_flowrate: {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"KOH": 1.0}, "purge_time": 60}
+
+# expect the human to start the experiment with the cell
+initial_combi_position:
+  x: 0.0
+  y: 0.0
+
+# motion controller speed in m/s
+speed: 1e-3
+
+# use INTERNAL/EXTERNAL cell
+cell: EXTERNAL
+
+# add a delay before running each experiment...
+initial_delay: 0
+
+confirm: False
+confirm_experiment: False
+
+# ease off vertically before moving the cell laterally
+# step height in meters
+step_height: 0.002
+
+cleanup_pause: 30
+fill_rate: 1
+fill_counter_ratio: 0.5
+fill_time: 4
+shrink_counter_ratio: 1.
+shrink_time: 1

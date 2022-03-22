@@ -1,0 +1,1209 @@
+2020-10-16 12:04:50,776 - root - INFO - connecting to the SDC...
+2020-10-16 12:04:51,351 - root - INFO - starting from x    0.0
+y    0.0
+dtype: float64
+2020-10-16 12:04:53,544 - root - INFO - connected!
+2020-10-16 12:07:30,154 - root - INFO - connecting to the SDC...
+2020-10-16 12:07:30,624 - root - INFO - starting from x    0.0
+y    0.0
+dtype: float64
+2020-10-16 12:07:32,399 - root - INFO - connected!
+2020-10-16 12:08:24,289 - root - INFO - resuming starting at sample location 0
+2020-10-16 12:08:50,773 - root - INFO - current solution levels: {'KOH': 45.0, 'K2SO4': 31.1054, 'H2SO4': 40.0}
+2020-10-16 12:11:28,891 - root - WARNING - current pH reading of 11.22 does not match target of 10.0
+2020-10-16 12:11:29,177 - root - INFO - location *1*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 12:11:29,950 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-10-16 12:11:30,100 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 12:11:30,251 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 12:21:39,223 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -6.298401969271444e-05, 'rms': 0.0025469010155676455, 'spike': 0.01717555522918701, 'stop time': 480}
+2020-10-16 12:21:41,825 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:21:41,963 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:24:56,542 - asdc.analysis.lpr - WARNING - LPR current does not cross zero!
+2020-10-16 12:24:56,649 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-16 12:24:57,094 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 12:24:57,547 - asdc.analysis.lpr - INFO - LPR slope: -3678.579384743543 (R2=0.2833822045246376), OCP: -0.6295823298740562
+2020-10-16 12:25:00,506 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:25:00,604 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:28:15,174 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 12:28:15,308 - asdc.analysis.lpr - INFO - LPR slope: 3989.484621001024 (R2=0.8384241441519995), OCP: -0.5602147646160991
+2020-10-16 12:28:18,204 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:28:18,315 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:31:33,075 - asdc.analysis.lpr - WARNING - LPR current does not cross zero!
+2020-10-16 12:31:33,519 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-16 12:31:33,631 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 12:31:33,719 - asdc.analysis.lpr - INFO - LPR slope: -438.3940073544976 (R2=0.003706229186395517), OCP: -0.6106126310864884
+2020-10-16 12:31:37,254 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 12:31:37,366 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:33:24,712 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 12:33:24,825 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 12:34:59,516 - root - INFO - finished experiment 1: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 12:35:05,638 - root - INFO - current solution levels: {'KOH': 26.99, 'K2SO4': 31.1054, 'H2SO4': 40.0}
+2020-10-16 12:38:14,086 - root - WARNING - current pH reading of 10.72 does not match target of 10.0
+2020-10-16 12:38:14,236 - root - INFO - location *2*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 12:38:14,733 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.3, 'K2SO4': 0.7}, 'purge_time': 90}
+2020-10-16 12:38:15,201 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 12:38:15,305 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 12:43:17,503 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -4.6087032104918056e-05, 'rms': 0.0008435541307975959, 'spike': 0.0049073100090026855, 'stop time': 390}
+2020-10-16 12:43:23,750 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:43:24,136 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:46:38,729 - asdc.analysis.lpr - INFO - LPR slope: 5434.808007104358 (R2=0.9706991429978963), OCP: -0.6166146566417859
+2020-10-16 12:46:42,708 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:46:42,808 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:49:58,391 - asdc.analysis.lpr - INFO - LPR slope: 5026.382647253917 (R2=0.9823552983538157), OCP: -0.6229554937142708
+2020-10-16 12:50:02,097 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 12:50:02,187 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:53:17,752 - asdc.analysis.lpr - INFO - LPR slope: 5112.565942288752 (R2=0.986218257773882), OCP: -0.6290120335596269
+2020-10-16 12:53:20,383 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 12:53:20,539 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 12:55:06,086 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 12:55:07,206 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 12:56:39,825 - root - INFO - finished experiment 2: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 12:56:45,950 - root - INFO - current solution levels: {'KOH': 21.5729, 'K2SO4': 18.4655, 'H2SO4': 40.0}
+2020-10-16 12:56:46,097 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-16 13:05:08,017 - root - INFO - connecting to the SDC...
+2020-10-16 13:05:09,632 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 13:05:12,055 - root - INFO - connected!
+2020-10-16 13:07:23,226 - root - INFO - resuming starting at sample location 2
+2020-10-16 13:07:48,187 - root - INFO - current solution levels: {'KOH': 21.5729, 'K2SO4': 60.0, 'H2SO4': 40.0}
+2020-10-16 13:10:29,578 - root - WARNING - current pH reading of 7.24 does not match target of 10.0
+2020-10-16 13:10:29,719 - root - INFO - location *3*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 13:10:31,113 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-16 13:10:31,225 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 13:10:31,328 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 13:15:35,931 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -3.0524773154882137e-06, 'rms': 0.0003139085854471434, 'spike': 0.0012268424034118652, 'stop time': 390}
+2020-10-16 13:15:39,132 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:15:39,232 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:18:54,313 - asdc.analysis.lpr - INFO - LPR slope: 9796.601318411194 (R2=0.9901169503949385), OCP: -0.6176140122581215
+2020-10-16 13:18:56,968 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:18:57,071 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:22:11,752 - asdc.analysis.lpr - INFO - LPR slope: 8887.09419479247 (R2=0.9862736357055271), OCP: -0.6183928493645613
+2020-10-16 13:22:14,107 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:22:14,212 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:25:28,828 - asdc.analysis.lpr - INFO - LPR slope: 8995.74909513941 (R2=0.9677430756582747), OCP: -0.6194659485085292
+2020-10-16 13:25:31,183 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 13:25:31,287 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:27:16,807 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 13:27:16,935 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 13:28:49,716 - root - INFO - finished experiment 3: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 13:32:47,966 - root - INFO - resuming starting at sample location 3
+2020-10-16 13:32:54,091 - root - INFO - current solution levels: {'KOH': 19.7667, 'K2SO4': 59.99693889, 'H2SO4': 40.0}
+2020-10-16 13:35:34,006 - root - WARNING - current pH reading of 6.65 does not match target of 10.0
+2020-10-16 13:35:34,148 - root - INFO - location *4*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 13:35:34,700 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.03, 'K2SO4': 0.97}, 'purge_time': 90}
+2020-10-16 13:35:34,817 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 13:35:34,940 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 13:40:37,000 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -3.052131580199918e-05, 'rms': 0.0005825431379582088, 'spike': 0.002453625202178955, 'stop time': 390}
+2020-10-16 13:40:39,340 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:40:39,455 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:43:54,064 - asdc.analysis.lpr - INFO - LPR slope: 5185.662511408634 (R2=0.9773208436697935), OCP: -0.6364152212867632
+2020-10-16 13:43:57,153 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:43:57,273 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:47:11,888 - asdc.analysis.lpr - INFO - LPR slope: 5337.339993882169 (R2=0.9750874034931837), OCP: -0.6396238651776417
+2020-10-16 13:47:16,436 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 13:47:16,881 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:50:31,540 - asdc.analysis.lpr - INFO - LPR slope: 6347.376923150711 (R2=0.9592086086632586), OCP: -0.6404921344435135
+2020-10-16 13:50:34,519 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 13:50:34,609 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 13:52:21,100 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 13:52:21,220 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 13:53:56,302 - root - INFO - finished experiment 4: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 13:54:02,437 - root - INFO - current solution levels: {'KOH': 19.225, 'K2SO4': 42.8281, 'H2SO4': 40.0}
+2020-10-16 13:56:41,605 - root - WARNING - current pH reading of 6.5 does not match target of 10.0
+2020-10-16 13:56:42,062 - root - INFO - location *5*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 13:56:42,822 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-10-16 13:56:42,915 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 13:56:49,059 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 14:01:51,421 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 4.147344826397264e-05, 'rms': 0.0015528423680483087, 'spike': 0.006440877914428711, 'stop time': 390}
+2020-10-16 14:01:54,457 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 14:01:54,540 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 14:05:09,151 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 14:05:09,253 - asdc.analysis.lpr - INFO - LPR slope: 3469.1668768425543 (R2=0.6746469317833734), OCP: -0.6406981566093094
+2020-10-16 14:05:11,943 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 14:05:12,148 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 14:08:26,888 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 14:08:26,996 - asdc.analysis.lpr - INFO - LPR slope: 3086.5508387430923 (R2=0.8398299345968911), OCP: -0.6425963639753284
+2020-10-16 14:08:29,728 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 14:08:29,814 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 14:11:44,411 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 14:11:44,519 - asdc.analysis.lpr - INFO - LPR slope: 3259.614459396588 (R2=0.9398832283288658), OCP: -0.6463173879333203
+2020-10-16 14:11:46,791 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 14:11:46,891 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 14:13:32,609 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 14:13:32,737 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 14:15:04,495 - root - INFO - finished experiment 5: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 14:15:10,612 - root - INFO - current solution levels: {'KOH': 19.0443, 'K2SO4': 24.946599999999997, 'H2SO4': 40.0}
+2020-10-16 15:42:57,710 - root - INFO - connecting to the SDC...
+2020-10-16 15:42:58,390 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 15:43:00,328 - root - INFO - connected!
+2020-10-16 15:44:19,624 - root - INFO - resuming starting at sample location 5
+2020-10-16 15:46:34,167 - root - INFO - current solution levels: {'KOH': 10.0, 'K2SO4': 60.0, 'H2SO4': 30.0}
+2020-10-16 15:52:08,212 - root - INFO - connecting to the SDC...
+2020-10-16 15:52:08,700 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 15:52:10,707 - root - INFO - connected!
+2020-10-16 15:53:02,496 - root - INFO - resuming starting at sample location 5
+2020-10-16 15:53:34,048 - root - INFO - current solution levels: {'KOH': 9.630265, 'K2SO4': 56.77547, 'H2SO4': 30.0}
+2020-10-16 16:09:47,315 - root - INFO - connecting to the SDC...
+2020-10-16 16:09:47,807 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 16:09:50,039 - root - INFO - connected!
+2020-10-16 16:15:37,059 - root - INFO - connecting to the SDC...
+2020-10-16 16:15:37,540 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 16:15:37,558 - root - ERROR - could not connect to the Reglo peristaltic pump
+Traceback (most recent call last):
+  File "C:\Users\VERSASCAN\a-sdc\asdc\localclient.py", line 214, in __init__
+    self.reglo = sdc.reglo.Reglo(address=reglo_port, debug=config.get('reglo_debug', False))
+  File "C:\Users\VERSASCAN\a-sdc\asdc\sdc\reglo.py", line 36, in __init__
+    super().__init__(address=address, debug=debug)
+  File "C:\Users\VERSASCAN\Anaconda3\envs\py37\lib\site-packages\regloicclib\Pump.py", line 22, in __init__
+    self.hw = SerialCommunicator(address=address, debug=debug, **kwargs)
+  File "C:\Users\VERSASCAN\Anaconda3\envs\py37\lib\site-packages\regloicclib\Communicator.py", line 44, in __init__
+    self.init()
+  File "C:\Users\VERSASCAN\Anaconda3\envs\py37\lib\site-packages\regloicclib\Communicator.py", line 122, in init
+    self.ser = serial.Serial(self.address, **self.serial_details)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM16': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2020-10-16 16:15:37,891 - root - INFO - connected!
+2020-10-16 16:18:45,920 - root - INFO - connecting to the SDC...
+2020-10-16 16:18:46,404 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 16:18:48,263 - root - INFO - connected!
+2020-10-16 16:28:09,063 - root - INFO - resuming starting at sample location 5
+2020-10-16 16:28:32,865 - root - INFO - current solution levels: {'KOH': 8.07221, 'K2SO4': 43.7678, 'H2SO4': 30.0}
+2020-10-16 16:28:49,326 - root - INFO - connecting to the SDC...
+2020-10-16 16:28:49,822 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-16 16:28:51,639 - root - INFO - connected!
+2020-10-16 16:29:06,744 - root - INFO - resuming starting at sample location 5
+2020-10-16 16:29:14,851 - root - INFO - current solution levels: {'KOH': 8.07221, 'K2SO4': 43.7678, 'H2SO4': 30.0}
+2020-10-16 16:42:07,124 - root - INFO - resuming starting at sample location 5
+2020-10-16 16:42:21,012 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 27.512500000000003, 'H2SO4': 30.0}
+2020-10-16 16:44:51,164 - root - INFO - current pH reading is 10.08 (target is 10.0)
+2020-10-16 16:44:51,292 - root - INFO - location *6*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 16:44:52,331 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-16 16:44:52,535 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 16:44:52,696 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 16:49:57,279 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.8478886255952467e-05, 'rms': 0.0009654500261573128, 'spike': 0.0030670762062072754, 'stop time': 480}
+2020-10-16 16:49:59,798 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 16:49:59,902 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 16:53:14,830 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 16:53:14,950 - asdc.analysis.lpr - INFO - LPR slope: 3748.6528118400624 (R2=0.8829857197631583), OCP: -0.6803123867042355
+2020-10-16 16:53:17,335 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 16:53:17,446 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 16:56:32,016 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 16:56:32,144 - asdc.analysis.lpr - INFO - LPR slope: 2363.0145608814396 (R2=0.9266801501048036), OCP: -0.6832281804836233
+2020-10-16 16:56:34,704 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 16:56:34,799 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 16:59:49,496 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 16:59:49,621 - asdc.analysis.lpr - INFO - LPR slope: 1823.8075044826219 (R2=0.4433930410396083), OCP: -0.6891695681497467
+2020-10-16 16:59:51,958 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 16:59:52,095 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:01:37,282 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 17:01:37,415 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 17:03:10,278 - root - INFO - finished experiment 6: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:06:24,269 - root - INFO - current solution levels: {'KOH': 58.19404, 'K2SO4': 11.259500000000003, 'H2SO4': 30.0}
+2020-10-16 17:06:24,448 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-16 17:14:39,539 - root - WARNING - current pH reading of 7.61 does not match target of 10.0
+2020-10-16 17:14:39,703 - root - INFO - location *7*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:14:40,320 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.003, 'K2SO4': 0.997}, 'purge_time': 90}
+2020-10-16 17:14:40,486 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 17:14:40,572 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 17:19:42,871 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -5.205292854387927e-05, 'rms': 0.0006453572519609834, 'spike': 0.0049073100090026855, 'stop time': 390}
+2020-10-16 17:19:45,266 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:19:45,356 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:22:59,996 - asdc.analysis.lpr - INFO - LPR slope: 4637.574598039417 (R2=0.9586801496890167), OCP: -0.7298221630391509
+2020-10-16 17:23:02,407 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:23:02,506 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:26:17,272 - asdc.analysis.lpr - INFO - LPR slope: 4854.304001248901 (R2=0.9883216416861754), OCP: -0.7327139254792531
+2020-10-16 17:26:19,575 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:26:19,668 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:29:34,332 - asdc.analysis.lpr - INFO - LPR slope: 4477.174950625818 (R2=0.9730637902867356), OCP: -0.7321143617087903
+2020-10-16 17:29:36,552 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 17:29:36,641 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:31:21,841 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 17:31:21,969 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 17:32:53,703 - root - INFO - finished experiment 7: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:33:46,618 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 41.9965, 'H2SO4': 30.0}
+2020-10-16 17:36:49,708 - root - WARNING - current pH reading of 7.19 does not match target of 10.0
+2020-10-16 17:36:49,827 - root - INFO - location *8*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:36:50,421 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'K2SO4': 1.0}, 'purge_time': 90}
+2020-10-16 17:36:50,529 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 17:36:50,624 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 17:41:52,647 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.781558225454298e-05, 'rms': 0.00041624260039547427, 'spike': 0.00153350830078125, 'stop time': 390}
+2020-10-16 17:41:55,016 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:41:55,113 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:45:09,860 - asdc.analysis.lpr - INFO - LPR slope: 5585.322595992224 (R2=0.9936167264815933), OCP: -0.7103762010257768
+2020-10-16 17:45:12,305 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:45:12,404 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:48:27,993 - asdc.analysis.lpr - INFO - LPR slope: 4441.636560563921 (R2=0.9894821367274509), OCP: -0.7127374391136007
+2020-10-16 17:48:30,394 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 17:48:30,483 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:51:45,094 - asdc.analysis.lpr - INFO - LPR slope: 6872.72674286022 (R2=0.9952237544451279), OCP: -0.7175756643295702
+2020-10-16 17:51:47,496 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 17:51:47,591 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 17:53:32,639 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 17:53:32,804 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 17:55:04,526 - root - INFO - finished experiment 8: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:55:58,713 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 23.950000000000003, 'H2SO4': 30.0}
+2020-10-16 17:58:53,424 - root - WARNING - current pH reading of 6.73 does not match target of 10.0
+2020-10-16 17:58:53,539 - root - INFO - location *9*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 17:58:54,110 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.003, 'K2SO4': 0.997}, 'purge_time': 90}
+2020-10-16 17:58:54,196 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 17:58:54,835 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 18:03:56,871 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -6.989285627942451e-05, 'rms': 0.0004880843386435912, 'spike': 0.00153350830078125, 'stop time': 390}
+2020-10-16 18:03:59,358 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:03:59,449 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:07:15,068 - asdc.analysis.lpr - INFO - LPR slope: 5687.401318468123 (R2=0.9905265583172969), OCP: -0.7409731227375368
+2020-10-16 18:07:17,495 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:07:17,579 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:10:32,252 - asdc.analysis.lpr - INFO - LPR slope: 4677.888037116575 (R2=0.9865741128848924), OCP: -0.7433996722434237
+2020-10-16 18:10:34,831 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:10:34,913 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:13:49,618 - asdc.analysis.lpr - INFO - LPR slope: 6199.230924531098 (R2=0.9909365019077467), OCP: -0.7460905275813118
+2020-10-16 18:13:51,875 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 18:13:51,960 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:15:37,196 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 18:15:37,318 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 18:17:10,083 - root - INFO - finished experiment 9: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 18:17:41,980 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 5.948, 'H2SO4': 29.9455074}
+2020-10-16 18:17:42,091 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-16 18:24:17,872 - root - WARNING - current pH reading of 6.32 does not match target of 10.0
+2020-10-16 18:24:17,985 - root - INFO - location *10*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-16 18:24:18,462 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-10-16 18:24:18,572 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-16 18:24:18,662 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-16 18:29:20,664 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -6.0000389730989974e-05, 'rms': 0.0006520862574122458, 'spike': 0.0024536848068237305, 'stop time': 390}
+2020-10-16 18:29:23,179 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:29:23,270 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:32:37,921 - asdc.analysis.lpr - INFO - LPR slope: 3545.1251699870713 (R2=0.9860387674302857), OCP: -0.7702342376968317
+2020-10-16 18:32:40,427 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:32:40,511 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:35:55,091 - asdc.analysis.lpr - INFO - LPR slope: 4039.453716294986 (R2=0.9925412886859767), OCP: -0.7705311835795904
+2020-10-16 18:35:57,529 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-16 18:35:57,615 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:39:12,195 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-16 18:39:12,323 - asdc.analysis.lpr - INFO - LPR slope: 4168.107730199849 (R2=0.945140605073749), OCP: -0.769331721599895
+2020-10-16 18:39:15,006 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-16 18:39:15,105 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-16 18:41:00,674 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-16 18:41:00,776 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-16 18:42:33,479 - root - INFO - finished experiment 10: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 10:10:14,924 - root - INFO - connecting to the SDC...
+2020-10-19 10:10:15,504 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-19 10:10:17,348 - root - INFO - connected!
+2020-10-19 10:14:08,148 - root - INFO - resuming starting at sample location 10
+2020-10-19 10:14:18,023 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 42.122299999999996, 'H2SO4': 29.764035}
+2020-10-19 10:15:49,910 - root - INFO - connecting to the SDC...
+2020-10-19 10:15:50,387 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-19 10:15:52,580 - root - INFO - connected!
+2020-10-19 10:16:37,651 - root - INFO - connecting to the SDC...
+2020-10-19 10:16:38,148 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-19 10:16:40,480 - root - INFO - connected!
+2020-10-19 10:16:42,465 - root - INFO - resuming starting at sample location 10
+2020-10-19 10:16:51,019 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 42.093900000000005, 'H2SO4': 29.748439}
+2020-10-19 10:19:21,751 - root - WARNING - current pH reading of 5.34 does not match target of 10.0
+2020-10-19 10:19:21,878 - root - INFO - location *11*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 10:19:22,547 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.03, 'K2SO4': 0.97}, 'purge_time': 90}
+2020-10-19 10:19:22,649 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 10:19:22,753 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 10:24:26,815 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -2.533897851086113e-05, 'rms': 0.002018305232581102, 'spike': 0.006747543811798096, 'stop time': 390}
+2020-10-19 10:24:29,325 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:24:29,423 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:27:45,096 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:27:45,227 - asdc.analysis.lpr - INFO - LPR slope: 2312.042221862888 (R2=0.8552839172779477), OCP: -0.640306713167885
+2020-10-19 10:27:47,735 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:27:47,835 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:31:02,489 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:31:02,608 - asdc.analysis.lpr - INFO - LPR slope: 1712.831230455999 (R2=0.9323053243618042), OCP: -0.6291935314116334
+2020-10-19 10:31:05,224 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:31:05,339 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:34:19,911 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:34:20,088 - asdc.analysis.lpr - INFO - LPR slope: 2444.8940826068433 (R2=0.8757728707008992), OCP: -0.6376464282545303
+2020-10-19 10:34:22,476 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 10:34:22,651 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:36:07,849 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 10:36:08,160 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 10:37:40,097 - root - INFO - finished experiment 11: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 10:38:30,759 - root - INFO - resuming starting at sample location 11
+2020-10-19 10:38:49,220 - root - INFO - connecting to the SDC...
+2020-10-19 10:38:49,756 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-19 10:38:51,555 - root - INFO - connected!
+2020-10-19 10:39:13,404 - root - INFO - resuming starting at sample location 11
+2020-10-19 10:39:26,331 - root - INFO - resuming starting at sample location 11
+2020-10-19 10:39:33,103 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 24.5796, 'H2SO4': 29.204159}
+2020-10-19 10:42:13,967 - root - WARNING - current pH reading of 4.36 does not match target of 10.0
+2020-10-19 10:42:14,139 - root - INFO - location *12*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 10:42:16,823 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-19 10:42:16,929 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 10:42:17,036 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 10:47:20,817 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 1.234236650206464e-06, 'rms': 0.002293387495713723, 'spike': 0.0064408183097839355, 'stop time': 480}
+2020-10-19 10:47:23,377 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:47:23,467 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:50:38,190 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:50:38,313 - asdc.analysis.lpr - INFO - LPR slope: 2670.7141288026646 (R2=0.9238322613187252), OCP: -0.6323537793882615
+2020-10-19 10:50:40,763 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:50:40,848 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:53:55,519 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:53:55,664 - asdc.analysis.lpr - INFO - LPR slope: 3727.4673686528063 (R2=0.8513036406714244), OCP: -0.6351760453498869
+2020-10-19 10:53:58,091 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 10:53:58,180 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:57:13,716 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 10:57:13,848 - asdc.analysis.lpr - INFO - LPR slope: 4263.408060010607 (R2=0.8049681267530442), OCP: -0.6284429102256375
+2020-10-19 10:57:16,351 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 10:57:16,449 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 10:59:01,506 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 10:59:01,631 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 11:00:33,424 - root - INFO - finished experiment 12: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 11:00:39,558 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 8.3294, 'H2SO4': 27.39017}
+2020-10-19 11:00:39,659 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-19 11:06:04,282 - root - WARNING - current pH reading of 3.79 does not match target of 10.0
+2020-10-19 11:06:04,407 - root - INFO - location *13*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 11:06:04,870 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.3, 'K2SO4': 0.7}, 'purge_time': 90}
+2020-10-19 11:06:06,083 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 11:06:06,212 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 11:11:08,196 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -7.423824698567959e-05, 'rms': 0.002503999515916309, 'spike': 0.007360994815826416, 'stop time': 390}
+2020-10-19 11:11:10,835 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:11:10,929 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:14:25,572 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:14:25,678 - asdc.analysis.lpr - INFO - LPR slope: 1602.1854871928265 (R2=0.8607699854886294), OCP: -0.6871682890202933
+2020-10-19 11:14:28,332 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:14:28,425 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:17:43,161 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:17:43,289 - asdc.analysis.lpr - INFO - LPR slope: 2009.4795185361952 (R2=0.8174675822901991), OCP: -0.6863963661275224
+2020-10-19 11:17:45,811 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:17:45,976 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:21:01,508 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:21:01,625 - asdc.analysis.lpr - INFO - LPR slope: 2493.043004696845 (R2=0.8119706986246936), OCP: -0.6810228535082847
+2020-10-19 11:21:04,303 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 11:21:04,428 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:22:49,559 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 11:22:49,690 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 11:24:22,513 - root - INFO - finished experiment 13: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 11:24:28,703 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 60.0, 'H2SO4': 21.94649}
+2020-10-19 11:30:58,529 - root - WARNING - current pH reading of 3.14 does not match target of 10.0
+2020-10-19 11:30:58,671 - root - INFO - location *14*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 11:30:59,151 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-10-19 11:30:59,291 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.01, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 11:30:59,396 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 11:36:01,566 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 5.39038752587693e-05, 'rms': 0.0017383464947684625, 'spike': 0.0055207014083862305, 'stop time': 390}
+2020-10-19 11:36:04,338 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:36:04,430 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:39:19,019 - asdc.analysis.lpr - WARNING - LPR current does not cross zero!
+2020-10-19 11:39:19,135 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-19 11:39:19,372 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:39:19,542 - asdc.analysis.lpr - INFO - LPR slope: -136.9108701123152 (R2=0.002536272285323578), OCP: -0.6515970094559798
+2020-10-19 11:39:21,966 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:39:22,072 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:42:36,753 - asdc.analysis.lpr - WARNING - LPR current does not cross zero!
+2020-10-19 11:42:36,878 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:42:36,968 - asdc.analysis.lpr - INFO - LPR slope: -129.7963915096243 (R2=0.0010113776407604806), OCP: -0.6455793596673793
+2020-10-19 11:42:39,661 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 11:42:39,744 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:45:54,452 - asdc.analysis.lpr - WARNING - LPR current does not cross zero!
+2020-10-19 11:45:54,600 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-19 11:45:54,729 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 11:45:54,832 - asdc.analysis.lpr - INFO - LPR slope: -912.1209638538005 (R2=0.2833550361120227), OCP: -0.6350168897706722
+2020-10-19 11:45:57,444 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 11:45:57,836 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 11:47:43,155 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 11:47:43,273 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 11:49:16,163 - root - INFO - finished experiment 14: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 11:55:38,802 - root - INFO - resuming starting at sample location 14
+2020-10-19 11:55:53,092 - root - INFO - resuming starting at sample location 14
+2020-10-19 16:08:31,641 - root - INFO - resuming starting at sample location 14
+2020-10-19 16:09:04,884 - root - INFO - resuming starting at sample location 14
+2020-10-19 16:09:11,072 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 60.0, 'H2SO4': 3.8653000000000013}
+2020-10-19 16:10:30,740 - root - INFO - connecting to the SDC...
+2020-10-19 16:10:31,315 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-19 16:10:33,119 - root - INFO - connected!
+2020-10-19 16:10:36,239 - root - INFO - resuming starting at sample location 14
+2020-10-19 16:10:47,479 - root - INFO - resuming starting at sample location 14
+2020-10-19 16:10:53,587 - root - INFO - current solution levels: {'KOH': 58.13979, 'K2SO4': 60.0, 'H2SO4': 3.8653000000000013}
+2020-10-19 16:15:28,343 - root - WARNING - current pH reading of 11.08 does not match target of 10.0
+2020-10-19 16:15:28,832 - root - INFO - location *15*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 16:15:29,560 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-10-19 16:15:29,649 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 16:15:29,739 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 16:45:32,761 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 8.919902497331389e-05, 'rms': 0.003792849249367758, 'spike': 0.014721870422363281, 'stop time': 930}
+2020-10-19 16:45:35,326 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 16:45:35,414 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 16:48:51,223 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 16:48:51,343 - asdc.analysis.lpr - INFO - LPR slope: 3934.648209799681 (R2=0.520540488136663), OCP: -0.7013302757169934
+2020-10-19 16:48:53,788 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 16:48:53,901 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 16:52:08,513 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-19 16:52:08,617 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-19 16:52:08,712 - asdc.analysis.lpr - INFO - LPR slope: 1138.3042545695394 (R2=0.9371763438901817), OCP: -0.6704826088738989
+2020-10-19 16:52:11,393 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 16:52:11,544 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 16:55:26,208 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-19 16:55:26,325 - asdc.analysis.lpr - INFO - LPR slope: 1835.0183608357627 (R2=0.9654478418839504), OCP: -0.728261886545801
+2020-10-19 16:55:28,859 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 16:55:28,950 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 16:57:14,592 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 16:57:14,721 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 16:58:46,667 - root - INFO - finished experiment 15: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 16:58:52,808 - root - INFO - current solution levels: {'KOH': 40.1256, 'K2SO4': 60.0, 'H2SO4': 3.8653000000000013}
+2020-10-19 17:01:35,995 - root - WARNING - current pH reading of 10.53 does not match target of 10.0
+2020-10-19 17:01:36,118 - root - INFO - location *16*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 17:01:36,649 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.3, 'K2SO4': 0.7}, 'purge_time': 90}
+2020-10-19 17:01:36,756 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 17:01:36,979 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 17:12:03,424 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.126230044308144e-05, 'rms': 0.0004336541238611554, 'spike': 0.0030670762062072754, 'stop time': 570}
+2020-10-19 17:12:06,069 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:12:06,174 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:15:21,865 - asdc.analysis.lpr - INFO - LPR slope: 12283.32543057304 (R2=0.9911343112499477), OCP: -0.8261615971979446
+2020-10-19 17:15:24,715 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:15:24,800 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:18:39,473 - asdc.analysis.lpr - INFO - LPR slope: 13529.409609553433 (R2=0.9825127820494782), OCP: -0.8248087008121544
+2020-10-19 17:18:42,006 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:18:42,113 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:21:56,792 - asdc.analysis.lpr - INFO - LPR slope: 15053.68067201044 (R2=0.9757092180881649), OCP: -0.823231872017254
+2020-10-19 17:21:59,369 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 17:21:59,455 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:23:44,748 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 17:23:44,894 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 17:25:16,507 - root - INFO - finished experiment 16: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 17:25:22,628 - root - INFO - current solution levels: {'KOH': 34.71, 'K2SO4': 47.3636, 'H2SO4': 3.8653000000000013}
+2020-10-19 17:27:57,939 - root - INFO - current pH reading is 10.08 (target is 10.0)
+2020-10-19 17:27:58,076 - root - INFO - location *17*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 17:27:58,621 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-19 17:27:58,730 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-19 17:27:58,905 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-19 17:35:44,198 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.3609057249706469e-05, 'rms': 0.0002821030794399882, 'spike': 0.00153350830078125, 'stop time': 390}
+2020-10-19 17:35:46,611 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:35:46,792 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:39:01,467 - asdc.analysis.lpr - INFO - LPR slope: 9233.622661151103 (R2=0.9960111100401333), OCP: -0.8325263405190254
+2020-10-19 17:39:03,905 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:39:04,011 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:42:18,720 - asdc.analysis.lpr - INFO - LPR slope: 8511.680599745725 (R2=0.9945558048064409), OCP: -0.8311312717128553
+2020-10-19 17:42:21,110 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-19 17:42:21,203 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:45:35,919 - asdc.analysis.lpr - INFO - LPR slope: 8362.556881553486 (R2=0.9920364784042822), OCP: -0.8299079817579177
+2020-10-19 17:45:38,272 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-19 17:45:38,360 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-19 17:47:23,799 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-19 17:47:23,927 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-19 17:48:56,409 - root - INFO - finished experiment 17: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-19 17:49:02,529 - root - INFO - current solution levels: {'KOH': 32.9043, 'K2SO4': 31.1133, 'H2SO4': 3.8653000000000013}
+2020-10-20 13:36:08,467 - root - INFO - connecting to the SDC...
+2020-10-20 13:36:08,952 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-20 13:36:10,496 - root - ERROR - could not connect to the Orion pH meter
+Traceback (most recent call last):
+  File "C:\Users\VERSASCAN\a-sdc\asdc\localclient.py", line 220, in __init__
+    self.phmeter = sdc.orion.PHMeter(orion_port, zmq_pub=zmq_pub)
+  File "C:\Users\VERSASCAN\a-sdc\asdc\sdc\orion.py", line 57, in __init__
+    timeout=timeout
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM17': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2020-10-20 13:38:34,263 - root - INFO - connecting to the SDC...
+2020-10-20 13:38:34,740 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-20 13:44:17,668 - root - INFO - connecting to the SDC...
+2020-10-20 13:44:18,151 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-20 13:44:20,404 - root - INFO - connected!
+2020-10-20 13:44:40,084 - root - INFO - resuming starting at sample location 17
+2020-10-20 13:45:02,131 - root - INFO - resuming starting at sample location 17
+2020-10-20 13:45:08,233 - root - INFO - current solution levels: {'KOH': 32.9043, 'K2SO4': 31.1133, 'H2SO4': 0.055}
+2020-10-20 13:48:12,980 - root - WARNING - current pH reading of 6.96 does not match target of 10.0
+2020-10-20 13:48:13,092 - root - INFO - location *18*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 13:48:17,848 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.03, 'K2SO4': 0.97}, 'purge_time': 90}
+2020-10-20 13:48:17,940 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 13:48:18,051 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 13:57:13,363 - asdc.analysis.ocp - WARNING - OCP potential trace failed smoothness heuristic.
+2020-10-20 13:57:13,470 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 0.0001184879882944937, 'rms': 0.07286874576139665, 'spike': 0.8075577849522233, 'stop time': 570}
+2020-10-20 13:57:16,342 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 13:57:16,454 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:00:31,284 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-20 14:00:31,671 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-20 14:00:31,816 - asdc.analysis.lpr - INFO - LPR slope: 6049.116022402379 (R2=0.7344813079500225), OCP: -0.8153368130446476
+2020-10-20 14:00:34,289 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:00:34,388 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:03:48,998 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-20 14:03:49,201 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-20 14:03:49,295 - asdc.analysis.lpr - INFO - LPR slope: 2711.456870152062 (R2=0.024255143564237046), OCP: -0.8135831430191454
+2020-10-20 14:03:51,746 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:03:51,876 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:07:06,529 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-20 14:07:06,649 - asdc.analysis.lpr - INFO - LPR slope: 582.0251229286318 (R2=0.02974455167049239), OCP: -0.798452366909398
+2020-10-20 14:07:09,070 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 14:07:09,180 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:08:54,452 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 14:08:54,596 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 14:10:27,591 - root - INFO - finished experiment 18: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 14:10:33,734 - root - INFO - current solution levels: {'KOH': 32.3624, 'K2SO4': 13.5948, 'H2SO4': 0.055}
+2020-10-20 14:10:33,838 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-20 14:21:42,366 - root - WARNING - current pH reading of 6.0 does not match target of 10.0
+2020-10-20 14:21:42,491 - root - INFO - location *19*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 14:21:43,020 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-10-20 14:21:43,155 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 14:21:43,259 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 14:26:45,376 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -3.2714646318520106e-06, 'rms': 0.0002781158463856685, 'spike': 0.0012268424034118652, 'stop time': 390}
+2020-10-20 14:26:48,224 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:26:48,352 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:30:02,904 - asdc.analysis.lpr - INFO - LPR slope: 10740.07863472496 (R2=0.9927514732922313), OCP: -0.7992437686563144
+2020-10-20 14:30:05,345 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:30:05,471 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:33:20,216 - asdc.analysis.lpr - INFO - LPR slope: 12434.275546394609 (R2=0.9964242449031896), OCP: -0.8016576590706462
+2020-10-20 14:33:22,950 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:33:23,054 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:36:37,699 - asdc.analysis.lpr - INFO - LPR slope: 11982.821568040588 (R2=0.9956673541865934), OCP: -0.8048360229295326
+2020-10-20 14:36:40,275 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 14:36:40,371 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:38:25,494 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 14:38:25,611 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 14:39:58,677 - root - INFO - finished experiment 19: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 14:40:04,814 - root - INFO - current solution levels: {'KOH': 32.1817, 'K2SO4': 42.1212, 'H2SO4': 0.055}
+2020-10-20 14:42:46,455 - root - WARNING - current pH reading of 6.05 does not match target of 10.0
+2020-10-20 14:42:46,592 - root - INFO - location *20*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 14:42:47,044 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.003, 'K2SO4': 0.997}, 'purge_time': 90}
+2020-10-20 14:42:47,144 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 14:42:47,239 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 14:49:39,492 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 8.439708810851576e-06, 'rms': 0.000529874861235673, 'spike': 0.002453625202178955, 'stop time': 390}
+2020-10-20 14:49:42,083 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:49:42,208 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:52:56,952 - asdc.analysis.lpr - INFO - LPR slope: 7516.490498847307 (R2=0.9588789552333091), OCP: -0.8155006145882261
+2020-10-20 14:52:59,700 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:52:59,793 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:56:14,628 - asdc.analysis.lpr - INFO - LPR slope: 7861.8006203843 (R2=0.9656042500984038), OCP: -0.8135595041735784
+2020-10-20 14:56:17,151 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 14:56:17,275 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 14:59:31,928 - asdc.analysis.lpr - INFO - LPR slope: 7985.072548212948 (R2=0.9744884644185097), OCP: -0.8156317667146107
+2020-10-20 14:59:35,102 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 14:59:35,185 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 15:01:20,411 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 15:01:20,544 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 15:02:52,519 - root - INFO - finished experiment 20: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 15:02:59,440 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 24.1124, 'H2SO4': 0.055}
+2020-10-20 15:05:42,590 - root - WARNING - current pH reading of 5.99 does not match target of 10.0
+2020-10-20 15:05:42,743 - root - INFO - location *21*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 15:05:43,367 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'K2SO4': 1.0}, 'purge_time': 90}
+2020-10-20 15:05:43,449 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 15:05:43,584 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 15:21:33,328 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -7.562863866704055e-06, 'rms': 0.0005963117652862614, 'spike': 0.0030670762062072754, 'stop time': 390}
+2020-10-20 15:21:36,253 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 15:21:36,376 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 15:24:51,009 - asdc.analysis.lpr - INFO - LPR slope: 6387.186686758491 (R2=0.9893341792613313), OCP: -0.8209531783374469
+2020-10-20 15:24:53,551 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 15:24:53,672 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 15:28:09,336 - asdc.analysis.lpr - INFO - LPR slope: 7180.507244493503 (R2=0.9923828151727252), OCP: -0.8203268681122894
+2020-10-20 15:28:12,156 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 15:28:12,262 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 15:31:26,904 - asdc.analysis.lpr - INFO - LPR slope: 7521.036496230408 (R2=0.9870496262264508), OCP: -0.8200098946799959
+2020-10-20 15:31:29,289 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 15:31:29,391 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 15:33:15,015 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 15:33:15,131 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 15:34:47,407 - root - INFO - finished experiment 21: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 15:34:53,556 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 6.073999999999998, 'H2SO4': 0.055}
+2020-10-20 15:34:53,644 - root - WARNING - Refill and reset syringes: H2SO4 (pump 2), K2SO4 (pump 1)
+2020-10-20 15:48:12,248 - root - INFO - connecting to the SDC...
+2020-10-20 15:48:12,726 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-20 15:48:14,531 - root - INFO - connected!
+2020-10-20 15:48:58,529 - root - INFO - resuming starting at sample location 21
+2020-10-20 15:49:05,648 - root - INFO - resuming starting at sample location 21
+2020-10-20 15:49:11,758 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 59.99726855, 'H2SO4': 0.05352349}
+2020-10-20 15:49:11,858 - root - WARNING - Refill and reset syringes: H2SO4 (pump 2)
+2020-10-20 15:53:01,746 - root - WARNING - current pH reading of 6.08 does not match target of 10.0
+2020-10-20 15:53:01,878 - root - INFO - location *22*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 15:53:02,828 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.003, 'K2SO4': 0.997}, 'purge_time': 90}
+2020-10-20 15:53:02,935 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 15:53:03,076 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 16:07:54,141 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -8.576404544695342e-06, 'rms': 0.0005064087272152243, 'spike': 0.0018402338027954102, 'stop time': 390}
+2020-10-20 16:07:56,822 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:07:56,924 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:11:11,622 - asdc.analysis.lpr - INFO - LPR slope: 4180.293047220353 (R2=0.989602542202016), OCP: -0.813188699822482
+2020-10-20 16:11:14,007 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:11:14,111 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:14:28,838 - asdc.analysis.lpr - INFO - LPR slope: 5010.98482497808 (R2=0.9880584772496442), OCP: -0.8160948321777494
+2020-10-20 16:14:31,257 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:14:31,356 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:17:45,953 - asdc.analysis.lpr - INFO - LPR slope: 5771.390858580023 (R2=0.9943814805490921), OCP: -0.8180939381126285
+2020-10-20 16:17:48,562 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 16:17:48,652 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:19:34,016 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 16:19:34,141 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 16:21:05,845 - root - INFO - finished experiment 22: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 16:21:11,969 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 41.9897, 'H2SO4': 0.0004612999999999978}
+2020-10-20 16:21:12,062 - root - WARNING - Refill and reset syringes: H2SO4 (pump 2)
+2020-10-20 16:29:29,911 - root - WARNING - current pH reading of 6.08 does not match target of 10.0
+2020-10-20 16:29:30,071 - root - INFO - location *23*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 16:29:30,656 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-10-20 16:29:30,743 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 16:29:30,828 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 16:34:32,897 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 2.0804575707999142e-05, 'rms': 0.0002966312806519777, 'spike': 0.0012268424034118652, 'stop time': 390}
+2020-10-20 16:34:35,710 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:34:35,838 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:37:50,572 - asdc.analysis.lpr - INFO - LPR slope: 9107.26430367056 (R2=0.9641958026914612), OCP: -0.8320825642014696
+2020-10-20 16:37:53,026 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:37:53,134 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:41:08,048 - asdc.analysis.lpr - INFO - LPR slope: 5284.574978231668 (R2=0.9715032286307912), OCP: -0.8245467007027316
+2020-10-20 16:41:10,560 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 16:41:10,681 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:44:25,241 - asdc.analysis.lpr - INFO - LPR slope: 4604.984888752255 (R2=0.9792146512901794), OCP: -0.8233760352310444
+2020-10-20 16:44:27,549 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 16:44:27,663 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 16:46:13,196 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 16:46:13,319 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 16:47:45,161 - root - INFO - finished experiment 23: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 16:47:51,283 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 24.1196, 'H2SO4': 54.818573}
+2020-10-20 17:07:38,812 - root - INFO - connecting to the SDC...
+2020-10-20 17:07:39,323 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-20 17:07:41,217 - root - INFO - connected!
+2020-10-20 17:08:03,352 - root - INFO - resuming starting at sample location 23
+2020-10-20 17:08:11,153 - root - INFO - resuming starting at sample location 23
+2020-10-20 17:08:17,263 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 24.1196, 'H2SO4': 54.818573}
+2020-10-20 17:11:23,587 - root - WARNING - current pH reading of 4.95 does not match target of 10.0
+2020-10-20 17:11:23,704 - root - INFO - location *24*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 17:11:24,339 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.03, 'K2SO4': 0.97}, 'purge_time': 90}
+2020-10-20 17:11:24,440 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-20 17:11:24,532 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-20 17:16:28,792 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 1.1818218700092362e-05, 'rms': 0.00037044732643933096, 'spike': 0.0021469593048095703, 'stop time': 480}
+2020-10-20 17:16:31,236 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 17:16:31,322 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 17:19:45,986 - asdc.analysis.lpr - INFO - LPR slope: 7551.967438870546 (R2=0.9831185290457798), OCP: -0.8038742498163675
+2020-10-20 17:19:48,375 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 17:19:48,475 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 17:23:03,222 - asdc.analysis.lpr - INFO - LPR slope: 8549.475363046531 (R2=0.9927401871107273), OCP: -0.8059137325835174
+2020-10-20 17:23:05,619 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-20 17:23:05,726 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 17:26:20,512 - asdc.analysis.lpr - INFO - LPR slope: 6126.400617993344 (R2=0.9728353116057336), OCP: -0.8048976282263531
+2020-10-20 17:26:22,995 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-20 17:26:23,094 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-20 17:28:08,439 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-20 17:28:08,584 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-20 17:29:41,641 - root - INFO - finished experiment 24: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-20 17:29:47,771 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 6.609999999999999, 'H2SO4': 54.274478}
+2020-10-20 17:29:47,857 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-21 10:38:49,550 - root - INFO - connecting to the SDC...
+2020-10-21 10:38:50,048 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:38:51,585 - root - ERROR - could not connect to the Orion pH meter
+Traceback (most recent call last):
+  File "C:\Users\VERSASCAN\a-sdc\asdc\localclient.py", line 220, in __init__
+    self.phmeter = sdc.orion.PHMeter(orion_port, zmq_pub=zmq_pub)
+  File "C:\Users\VERSASCAN\a-sdc\asdc\sdc\orion.py", line 57, in __init__
+    timeout=timeout
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM17': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2020-10-21 10:39:29,358 - root - INFO - connecting to the SDC...
+2020-10-21 10:39:29,911 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:39:31,448 - root - ERROR - could not connect to the Orion pH meter
+Traceback (most recent call last):
+  File "C:\Users\VERSASCAN\a-sdc\asdc\localclient.py", line 220, in __init__
+    self.phmeter = sdc.orion.PHMeter(orion_port, zmq_pub=zmq_pub)
+  File "C:\Users\VERSASCAN\a-sdc\asdc\sdc\orion.py", line 57, in __init__
+    timeout=timeout
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM17': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2020-10-21 10:39:31,449 - root - INFO - connected!
+2020-10-21 10:40:09,636 - root - INFO - connecting to the SDC...
+2020-10-21 10:40:10,128 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:40:11,671 - root - ERROR - could not connect to the Orion pH meter
+Traceback (most recent call last):
+  File "C:\Users\VERSASCAN\a-sdc\asdc\localclient.py", line 220, in __init__
+    self.phmeter = sdc.orion.PHMeter(orion_port, zmq_pub=zmq_pub)
+  File "C:\Users\VERSASCAN\a-sdc\asdc\sdc\orion.py", line 57, in __init__
+    timeout=timeout
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Users\VERSASCAN\AppData\Roaming\Python\Python37\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM17': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+2020-10-21 10:40:11,672 - root - INFO - connected!
+2020-10-21 10:40:32,707 - root - INFO - connecting to the SDC...
+2020-10-21 10:40:33,190 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:40:35,190 - root - INFO - connected!
+2020-10-21 10:40:41,928 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:41:17,726 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:41:23,887 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 58.0, 'H2SO4': 55.0}
+2020-10-21 10:45:16,143 - root - INFO - connecting to the SDC...
+2020-10-21 10:45:16,622 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:45:18,785 - root - INFO - connected!
+2020-10-21 10:45:34,331 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:45:38,828 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:45:44,950 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 58.0, 'H2SO4': 55.0}
+2020-10-21 10:48:59,308 - root - INFO - connecting to the SDC...
+2020-10-21 10:48:59,799 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:49:01,740 - root - INFO - connected!
+2020-10-21 10:49:20,176 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:49:26,947 - root - INFO - resuming starting at sample location 24
+2020-10-21 10:49:33,044 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 58.0, 'H2SO4': 55.0}
+2020-10-21 10:55:45,486 - root - INFO - connecting to the SDC...
+2020-10-21 10:55:46,013 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 10:55:47,833 - root - INFO - connected!
+2020-10-21 11:59:49,148 - root - INFO - resuming starting at sample location 24
+2020-10-21 11:59:56,915 - root - INFO - resuming starting at sample location 24
+2020-10-21 12:00:03,036 - root - INFO - current solution levels: {'KOH': 32.1275, 'K2SO4': 58.0, 'H2SO4': 55.0}
+2020-10-21 12:02:42,579 - root - WARNING - current pH reading of 4.33 does not match target of 10.0
+2020-10-21 12:02:42,697 - root - INFO - location *25*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 12:02:43,315 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-21 12:02:43,404 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 12:02:43,505 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 12:32:45,868 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 2.4038563590387693e-05, 'rms': 0.0010006020703801134, 'spike': 0.004293859004974365, 'stop time': 390}
+2020-10-21 12:32:48,276 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 12:32:48,394 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 12:36:03,047 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 12:36:03,167 - asdc.analysis.lpr - INFO - LPR slope: 2704.325505717147 (R2=0.9315658481837947), OCP: -0.6800742400306592
+2020-10-21 12:36:05,550 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 12:36:05,641 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 12:39:20,230 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 12:39:20,359 - asdc.analysis.lpr - INFO - LPR slope: 2736.21102083355 (R2=0.9384732142823499), OCP: -0.6759615055873822
+2020-10-21 12:39:22,845 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 12:39:22,940 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 12:42:37,659 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 12:42:37,815 - asdc.analysis.lpr - INFO - LPR slope: 2590.3894580069787 (R2=0.932801974521152), OCP: -0.6731117833551074
+2020-10-21 12:42:40,163 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 12:42:40,257 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 12:44:25,592 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 12:44:25,723 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 12:45:58,560 - root - INFO - finished experiment 25: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 12:46:04,699 - root - INFO - current solution levels: {'KOH': 38.0, 'K2SO4': 41.7474, 'H2SO4': 53.18575}
+2020-10-21 12:48:41,156 - root - WARNING - current pH reading of 3.65 does not match target of 10.0
+2020-10-21 12:48:41,305 - root - INFO - location *26*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 12:48:41,831 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.3, 'K2SO4': 0.7}, 'purge_time': 90}
+2020-10-21 12:48:41,919 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 12:48:42,017 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 13:18:44,103 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 4.8657352657477824e-05, 'rms': 0.0011421686650146014, 'spike': 0.0039871931076049805, 'stop time': 390}
+2020-10-21 13:18:46,622 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 13:18:46,720 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 13:22:02,251 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 13:22:02,359 - asdc.analysis.lpr - INFO - LPR slope: 2632.590092330093 (R2=0.9441494081420578), OCP: -0.713253644721043
+2020-10-21 13:22:04,625 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 13:22:04,718 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 13:25:19,286 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 13:25:20,399 - asdc.analysis.lpr - INFO - LPR slope: 2690.36506638702 (R2=0.9363166936646162), OCP: -0.7099120605926146
+2020-10-21 13:25:22,803 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 13:25:22,900 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 13:28:37,480 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 13:28:37,590 - asdc.analysis.lpr - INFO - LPR slope: 2776.9659830579612 (R2=0.9260044381668153), OCP: -0.7066844474409075
+2020-10-21 13:28:40,085 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 13:28:40,195 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 13:30:25,814 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 13:30:25,939 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 13:31:58,696 - root - INFO - finished experiment 26: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 13:32:04,819 - root - INFO - current solution levels: {'KOH': 38.0, 'K2SO4': 29.1107, 'H2SO4': 47.74507}
+2020-10-21 13:48:46,618 - root - WARNING - current pH reading of 3.1 does not match target of 10.0
+2020-10-21 13:48:46,743 - root - INFO - location *27*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 13:48:47,281 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-10-21 13:48:47,369 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 13:48:47,463 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 14:18:49,759 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 5.494673452179028e-06, 'rms': 0.0023169445600710633, 'spike': 0.011654853820800781, 'stop time': 390}
+2020-10-21 14:18:52,118 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 14:18:52,243 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 14:22:06,916 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 14:22:07,019 - asdc.analysis.lpr - INFO - LPR slope: 50.95192842589887 (R2=0.0006552560682731741), OCP: -0.5455374726330852
+2020-10-21 14:22:09,516 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 14:22:09,611 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 14:25:24,233 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 14:25:24,340 - asdc.analysis.lpr - INFO - LPR slope: 1066.5650386068432 (R2=0.5975027864346643), OCP: -0.5288751682306425
+2020-10-21 14:25:26,784 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 14:25:26,881 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 14:28:41,628 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-21 14:28:41,742 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 14:28:41,833 - asdc.analysis.lpr - INFO - LPR slope: 1001.5555175176481 (R2=0.47427050097996476), OCP: -0.5177768835386236
+2020-10-21 14:28:44,297 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 14:28:44,391 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 14:30:29,960 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 14:30:30,108 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 14:32:02,875 - root - INFO - finished experiment 27: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 14:32:08,996 - root - INFO - current solution levels: {'KOH': 38.0, 'K2SO4': 29.1107, 'H2SO4': 29.6594}
+2020-10-21 14:48:03,914 - root - WARNING - current pH reading of 11.15 does not match target of 10.0
+2020-10-21 14:48:04,044 - root - INFO - location *28*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 14:48:04,619 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.3, 'K2SO4': 0.7}, 'purge_time': 90}
+2020-10-21 14:48:04,775 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 14:48:04,865 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 15:18:07,166 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 7.807289350209091e-05, 'rms': 0.002387778165706431, 'spike': 0.015948772430419922, 'stop time': 390}
+2020-10-21 15:18:09,625 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 15:18:09,720 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 15:21:24,337 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-21 15:21:24,455 - asdc.analysis.lpr - INFO - LPR slope: 2717.7689191772315 (R2=0.9745353452442929), OCP: -0.6078719349353291
+2020-10-21 15:21:28,297 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 15:21:28,407 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 15:24:42,968 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 15:24:43,092 - asdc.analysis.lpr - INFO - LPR slope: 10975.156399851514 (R2=0.5616381139604685), OCP: -0.6436594001440589
+2020-10-21 15:24:45,444 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 15:24:45,552 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 15:28:00,136 - asdc.analysis.lpr - WARNING - scan range does not span +/- 5 mV
+2020-10-21 15:28:00,253 - asdc.analysis.lpr - WARNING - R^2 threshold not met
+2020-10-21 15:28:00,369 - asdc.analysis.lpr - INFO - LPR slope: 9270.42411744284 (R2=0.7059676918128701), OCP: -0.6269425581398304
+2020-10-21 15:28:02,904 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 15:28:03,006 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 15:29:48,203 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 15:29:49,521 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 15:31:22,244 - root - INFO - finished experiment 28: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 15:31:28,368 - root - INFO - current solution levels: {'KOH': 32.58635, 'K2SO4': 16.478900000000003, 'H2SO4': 29.6594}
+2020-10-21 15:31:28,467 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-21 17:00:08,283 - root - WARNING - current pH reading of 10.79 does not match target of 10.0
+2020-10-21 17:00:08,412 - root - INFO - location *29*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 17:00:08,964 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-10-21 17:00:09,070 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 17:00:09,167 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 17:07:06,961 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -8.907373206965985e-06, 'rms': 0.000352404632664059, 'spike': 0.0018402338027954102, 'stop time': 390}
+2020-10-21 17:07:09,365 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 17:07:09,467 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 17:10:24,040 - asdc.analysis.lpr - INFO - LPR slope: 6211.222343810867 (R2=0.9962012621941831), OCP: -0.6764851814078923
+2020-10-21 17:10:26,476 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 17:10:26,648 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 17:13:41,270 - asdc.analysis.lpr - INFO - LPR slope: 5825.467667095405 (R2=0.9945904391090107), OCP: -0.6766054889202167
+2020-10-21 17:13:43,580 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 17:13:43,686 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 17:16:58,441 - asdc.analysis.lpr - INFO - LPR slope: 5372.841632418219 (R2=0.9935066539118926), OCP: -0.6775532210861909
+2020-10-21 17:17:00,807 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 17:17:00,900 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 17:18:46,057 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 17:18:46,302 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 17:20:17,798 - root - INFO - finished experiment 29: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 17:20:23,991 - root - INFO - current solution levels: {'KOH': 30.78114, 'K2SO4': 41.752300000000005, 'H2SO4': 29.6594}
+2020-10-21 17:25:37,371 - root - INFO - connecting to the SDC...
+2020-10-21 17:25:37,841 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 17:25:39,784 - root - INFO - connected!
+2020-10-21 17:25:57,744 - root - INFO - connecting to the SDC...
+2020-10-21 17:25:58,243 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 17:26:00,361 - root - INFO - connected!
+2020-10-21 17:26:18,243 - root - INFO - resuming starting at sample location 29
+2020-10-21 17:26:24,622 - root - INFO - resuming starting at sample location 29
+2020-10-21 17:26:30,720 - root - INFO - current solution levels: {'KOH': 30.78114, 'K2SO4': 41.752300000000005, 'H2SO4': 29.6594}
+2020-10-21 17:29:19,347 - root - INFO - connecting to the SDC...
+2020-10-21 17:29:19,876 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 17:29:22,148 - root - INFO - connected!
+2020-10-21 17:29:48,457 - root - INFO - resuming starting at sample location 29
+2020-10-21 17:30:25,798 - root - INFO - resuming starting at sample location 29
+2020-10-21 17:30:31,927 - root - INFO - current solution levels: {'KOH': 28.38137, 'K2SO4': 35.0, 'H2SO4': 29.6594}
+2020-10-21 17:33:02,262 - root - WARNING - current pH reading of 11.67 does not match target of 10.0
+2020-10-21 17:33:02,378 - root - INFO - location *30*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 17:33:03,145 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-10-21 17:33:03,230 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 17:33:03,332 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 18:03:06,022 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -2.2148554135109955e-05, 'rms': 0.004033225028698048, 'spike': 0.03772488236427307, 'stop time': 750}
+2020-10-21 18:03:08,660 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 18:03:08,755 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 18:06:24,359 - asdc.analysis.lpr - INFO - LPR slope: 34992.21297234108 (R2=0.9952546121485402), OCP: -0.450132105026607
+2020-10-21 18:06:26,783 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 18:06:26,881 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 18:09:41,496 - asdc.analysis.lpr - INFO - LPR slope: 39971.42257267166 (R2=0.9966995231362048), OCP: -0.45742656894150013
+2020-10-21 18:09:44,197 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 18:09:44,336 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 18:12:59,084 - asdc.analysis.lpr - INFO - LPR slope: 37258.153194150895 (R2=0.9971823532555509), OCP: -0.45886868204122067
+2020-10-21 18:13:01,868 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 18:13:01,958 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 18:14:47,384 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 18:14:47,507 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 18:16:20,460 - root - INFO - finished experiment 30: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 18:16:26,671 - root - INFO - current solution levels: {'KOH': 10.366900000000001, 'K2SO4': 35.0, 'H2SO4': 29.6594}
+2020-10-21 18:19:56,672 - root - INFO - connecting to the SDC...
+2020-10-21 18:19:57,203 - root - INFO - resuming from id                                                              1
+intent                                                  corrosion
+instructions    [{"op": "set_flow", "pH": 10, "flow_rate": 1.2...
+x_combi                                                         0
+y_combi                                                        30
+x_versa                                                   21.4444
+y_versa                                                   67.9575
+z_versa                                                 0.0102322
+flag                                                        False
+dtype: object
+2020-10-21 18:19:59,216 - root - INFO - connected!
+2020-10-21 18:20:25,125 - root - INFO - resuming starting at sample location 30
+2020-10-21 18:20:38,743 - root - INFO - resuming starting at sample location 30
+2020-10-21 18:20:44,974 - root - INFO - current solution levels: {'KOH': 10.366900000000001, 'K2SO4': 35.0, 'H2SO4': 29.6594}
+2020-10-21 18:23:25,375 - root - WARNING - current pH reading of 8.86 does not match target of 10.0
+2020-10-21 18:23:25,520 - root - INFO - location *31*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 18:23:26,198 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-10-21 18:23:26,432 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 18:23:26,726 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 18:53:29,519 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.6884347420089177e-05, 'rms': 0.0005626654765478837, 'spike': 0.0055207014083862305, 'stop time': 660}
+2020-10-21 18:53:32,036 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 18:53:32,126 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 18:56:47,835 - asdc.analysis.lpr - INFO - LPR slope: 14635.331964586061 (R2=0.9624879188043514), OCP: -0.6971164443748914
+2020-10-21 18:56:50,163 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 18:56:50,263 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:00:04,921 - asdc.analysis.lpr - INFO - LPR slope: 15414.259811324207 (R2=0.9583220093373273), OCP: -0.6979198715506638
+2020-10-21 19:00:07,438 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 19:00:07,556 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:03:23,072 - asdc.analysis.lpr - INFO - LPR slope: 14810.375165164669 (R2=0.9515870859055999), OCP: -0.696661602055961
+2020-10-21 19:03:25,511 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 19:03:25,635 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:05:10,905 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 19:05:11,046 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 19:06:42,864 - root - INFO - finished experiment 31: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 19:06:49,023 - root - INFO - current solution levels: {'KOH': 10.1862, 'K2SO4': 17.1199, 'H2SO4': 29.6594}
+2020-10-21 19:06:49,154 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-10-21 19:16:44,427 - root - WARNING - current pH reading of 7.23 does not match target of 10.0
+2020-10-21 19:16:44,588 - root - INFO - location *32*:  set_flow-open_circuit-lpr-lpr-lpr-tafel-cv
+2020-10-21 19:16:45,177 - root - INFO - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.003, 'K2SO4': 0.997}, 'purge_time': 90}
+2020-10-21 19:16:45,276 - root - INFO - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300}
+2020-10-21 19:16:45,364 - asdc.sdc.experiment_defaults - INFO - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-10-21 19:21:47,593 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 9.786365083677683e-09, 'rms': 0.000265525406708936, 'spike': 0.0015335679054260254, 'stop time': 390}
+2020-10-21 19:21:50,441 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 19:21:50,575 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:25:05,154 - asdc.analysis.lpr - INFO - LPR slope: 18561.34740066701 (R2=0.9829420114378163), OCP: -0.7067091673304295
+2020-10-21 19:25:07,691 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 19:25:07,779 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:28:22,454 - asdc.analysis.lpr - INFO - LPR slope: 12788.405708870276 (R2=0.9930700698563522), OCP: -0.7035976956628239
+2020-10-21 19:28:25,035 - root - INFO - running {'op': 'lpr', 'initial_potential': -0.012, 'final_potential': 0.012, 'step_height': 0.0001, 'step_time': 0.8, 'current_range': '20UA'}
+2020-10-21 19:28:25,155 - asdc.sdc.experiment_defaults - INFO - running LPRArgs: -0.012,VS OC,0.012,VS OC,0.0001,0.8,NONE,<,0,NONE,<,0,20UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:31:39,957 - asdc.analysis.lpr - INFO - LPR slope: 9091.482901968793 (R2=0.9953425055831013), OCP: -0.7033451738000139
+2020-10-21 19:31:42,318 - root - INFO - running {'op': 'tafel', 'initial_potential': -0.25, 'final_potential': 0.25, 'step_height': 0.005, 'step_time': 1, 'current_range': '200UA'}
+2020-10-21 19:31:42,422 - asdc.sdc.experiment_defaults - INFO - running TafelArgs: -0.25,VS OC,0.25,VS OC,0.005,1,NONE,<,0,NONE,<,0,200UA,AUTO,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,AUTO,AUTO
+2020-10-21 19:33:27,638 - root - INFO - running {'op': 'cv', 'initial_potential': -1.3, 'vertex_potential_1': 0.0, 'vertex_potential_2': -1.3, 'final_potential': 0.0, 'scan_rate': 0.075, 'cycles': 2, 'current_range': '2MA'}
+2020-10-21 19:33:27,793 - asdc.sdc.experiment_defaults - INFO - running CyclicVoltammetryArgs: -1.3,VS REF,0.0,VS REF,0,NO,-1.3,VS REF,0,NO,0.075,2,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,YES,EXTERNAL,DISABLED,1,YES,AUTO,0.0,VS REF,AUTO
+2020-10-21 19:34:59,544 - root - INFO - finished experiment 32: set_flow-open_circuit-lpr-lpr-lpr-tafel-cv

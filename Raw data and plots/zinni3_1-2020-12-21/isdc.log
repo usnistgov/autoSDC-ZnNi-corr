@@ -1,0 +1,595 @@
+2020-12-21 14:22:37,944 - root - INFO - connecting to the SDC...
+2020-12-21 14:22:38,098 - root - DEBUG - initial vs position: [-3.01361083984375e-07, 0.024804244995117186, 0.005709460258483887]
+2020-12-21 14:22:38,421 - root - INFO - starting from x    0.0
+y    0.0
+dtype: float64
+2020-12-21 14:22:38,430 - root - DEBUG - wafer offset: [0. 0.]
+2020-12-21 14:22:40,192 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 14:22:40,355 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578565.000100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'connected!', 'ts': '1608578565.000100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:22:40,192 - root - INFO - connected!
+2020-12-21 14:23:00,967 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578585.000200', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'resuming starting at sample location 0', 'ts': '1608578585.000200', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:23:00,868 - root - INFO - resuming starting at sample location 0
+2020-12-21 14:23:00,967 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": 0}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"H2SO4": 1, "K2SO4": 0}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 14:23:01,065 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578586.000300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'H2SO4': 16.5, 'K2SO4': 0.0}", 'ts': '1608578586.000300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:23:00,967 - root - INFO - solution push target: {'H2SO4': 16.5, 'K2SO4': 0.0}
+2020-12-21 14:23:02,087 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 14:23:03,087 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 14:23:04,088 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 14:23:05,088 - asdc.sdc.pump - DEBUG - ivolume: 
+01:12.6425 ml
+01:
+2020-12-21 14:23:06,088 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 14:23:07,088 - asdc.sdc.pump - DEBUG - ivolume: 
+02:0 ul
+02:
+2020-12-21 14:23:07,188 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578592.000400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 47.3575, 'H2SO4': 45.0}", 'ts': '1608578592.000400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:23:07,088 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 47.3575, 'H2SO4': 45.0}
+2020-12-21 14:23:07,190 - root - DEBUG - starting droplet workflow
+2020-12-21 14:23:09,993 - root - DEBUG - cleaning up...
+2020-12-21 14:23:41,907 - root - DEBUG - target coordinites: [-3.01361084e-04  2.48042450e+01  0.00000000e+00]
+2020-12-21 14:23:42,433 - root - DEBUG - starting rinse
+2020-12-21 14:23:44,907 - root - DEBUG - filling droplet
+2020-12-21 14:23:52,480 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 14:23:54,015 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 14:23:58,484 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 14:23:58,486 - root - DEBUG - purging solution
+2020-12-21 14:25:34,497 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 14:25:36,865 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578741.000500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 0.47 does not match target of 10.0', 'ts': '1608578741.000500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:25:36,746 - root - WARNING - current pH reading of 0.47 does not match target of 10.0
+2020-12-21 14:25:37,088 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578742.000600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *1*:  set_flow-open_circuit', 'ts': '1608578742.000600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:25:36,980 - root - INFO - location *1*:  set_flow-open_circuit
+2020-12-21 14:25:37,199 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 14:25:37,624 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 1, 'K2SO4': 0}, 'purge_time': 90}
+2020-12-21 14:25:37,719 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578742.000700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608578742.000700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:25:37,625 - root - INFO - running set_flow
+2020-12-21 14:25:37,719 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 14:25:37,830 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608578742.000800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608578742.000800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:25:37,720 - root - INFO - running open_circuit
+2020-12-21 14:25:37,832 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 14:55:39,636 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 14:55:40,132 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580545.000900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -1.1032291749352396e-05, 'rms': 0.002711745869596836, 'spike': 0.038338273763656616, 'stop time': 390}", 'ts': '1608580545.000900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:55:40,007 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -1.1032291749352396e-05, 'rms': 0.002711745869596836, 'spike': 0.038338273763656616, 'stop time': 390}
+2020-12-21 14:55:40,513 - matplotlib.font_manager - DEBUG - findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\VERSASCAN\\Anaconda3\\envs\\py37\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+2020-12-21 14:55:40,558 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,631 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,708 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,739 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,756 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,816 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 14:55:40,881 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 14:55:41,851 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 771
+2020-12-21 14:55:43,139 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580548.001300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 1: set_flow-open_circuit', 'ts': '1608580548.001300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:55:43,036 - root - INFO - finished experiment 1: set_flow-open_circuit
+2020-12-21 14:55:43,139 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -10}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"H2SO4": 0.1, "K2SO4": 0.9}, "purge_time": 120}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 14:55:43,246 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580548.001400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'H2SO4': 2.2, 'K2SO4': 19.8}", 'ts': '1608580548.001400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:55:43,139 - root - INFO - solution push target: {'H2SO4': 2.2, 'K2SO4': 19.8}
+2020-12-21 14:55:44,256 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 14:55:45,256 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 14:55:46,257 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 14:55:47,259 - asdc.sdc.pump - DEBUG - ivolume: 
+01:12.6425 ml
+01:
+2020-12-21 14:55:48,259 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 14:55:49,259 - asdc.sdc.pump - DEBUG - ivolume: 
+02:18.1014 ml
+02:
+2020-12-21 14:55:49,348 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580554.001500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 47.3575, 'H2SO4': 26.8986}", 'ts': '1608580554.001500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:55:49,259 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 47.3575, 'H2SO4': 26.8986}
+2020-12-21 14:55:49,348 - root - DEBUG - starting droplet workflow
+2020-12-21 14:55:52,204 - root - DEBUG - cleaning up...
+2020-12-21 14:56:24,131 - root - DEBUG - target coordinites: [ 9.99969864 24.804245    0.        ]
+2020-12-21 14:56:24,390 - root - DEBUG - position update: [ 1.00001011e-02 -4.95910645e-08  0.00000000e+00] (mm)
+2020-12-21 14:56:28,044 - root - DEBUG - stage position: [0.01000004768371582, 0.024803546905517577, 0.011709209442138671]
+2020-12-21 14:56:29,046 - root - DEBUG - starting rinse
+2020-12-21 14:56:31,536 - root - DEBUG - filling droplet
+2020-12-21 14:56:39,363 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 14:56:40,864 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 14:56:45,313 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 14:56:45,313 - root - DEBUG - purging solution
+2020-12-21 14:58:51,552 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 14:58:54,096 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580739.001600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 1.7 does not match target of 10.0', 'ts': '1608580739.001600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:58:53,963 - root - WARNING - current pH reading of 1.7 does not match target of 10.0
+2020-12-21 14:58:54,209 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580739.001700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *2*:  set_flow-open_circuit', 'ts': '1608580739.001700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:58:54,108 - root - INFO - location *2*:  set_flow-open_circuit
+2020-12-21 14:58:54,308 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 14:58:54,576 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.1, 'K2SO4': 0.9}, 'purge_time': 120}
+2020-12-21 14:58:54,716 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580739.001800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608580739.001800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:58:54,577 - root - INFO - running set_flow
+2020-12-21 14:58:54,716 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 14:58:54,855 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608580739.001900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608580739.001900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 14:58:54,716 - root - INFO - running open_circuit
+2020-12-21 14:58:54,858 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 15:28:56,559 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 15:28:56,884 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582541.002000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -3.463318713023295e-05, 'rms': 0.006262109547594048, 'spike': 0.08403751254081726, 'stop time': 660}", 'ts': '1608582541.002000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:28:56,692 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -3.463318713023295e-05, 'rms': 0.006262109547594048, 'spike': 0.08403751254081726, 'stop time': 660}
+2020-12-21 15:28:57,128 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,154 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,206 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,236 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,253 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,316 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:28:57,407 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 15:28:58,411 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 766
+2020-12-21 15:28:59,730 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582544.002400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 2: set_flow-open_circuit', 'ts': '1608582544.002400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:28:59,595 - root - INFO - finished experiment 2: set_flow-open_circuit
+2020-12-21 15:28:59,732 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -20}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"H2SO4": 0.01, "K2SO4": 0.99}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 15:28:59,819 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582544.002500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'H2SO4': 0.165, 'K2SO4': 16.335}", 'ts': '1608582544.002500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:28:59,732 - root - INFO - solution push target: {'H2SO4': 0.165, 'K2SO4': 16.335}
+2020-12-21 15:29:00,830 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 15:29:01,831 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 15:29:02,831 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 15:29:03,831 - asdc.sdc.pump - DEBUG - ivolume: 
+01:33.8455 ml
+01:
+2020-12-21 15:29:04,831 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 15:29:05,831 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.4657 ml
+02:
+2020-12-21 15:29:05,935 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582550.002600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 26.1545, 'H2SO4': 24.5343}", 'ts': '1608582550.002600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:29:05,831 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 26.1545, 'H2SO4': 24.5343}
+2020-12-21 15:29:05,935 - root - DEBUG - starting droplet workflow
+2020-12-21 15:29:08,911 - root - DEBUG - cleaning up...
+2020-12-21 15:29:40,884 - root - DEBUG - target coordinites: [19.99969864 24.804245    0.        ]
+2020-12-21 15:29:41,151 - root - DEBUG - position update: [9.99890137e-03 3.50952148e-07 0.00000000e+00] (mm)
+2020-12-21 15:29:44,801 - root - DEBUG - stage position: [0.019999496459960936, 0.024805397033691407, 0.011509058952331543]
+2020-12-21 15:29:45,782 - root - DEBUG - starting rinse
+2020-12-21 15:29:48,256 - root - DEBUG - filling droplet
+2020-12-21 15:29:56,105 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 15:29:57,664 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 15:30:02,099 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 15:30:02,100 - root - DEBUG - purging solution
+2020-12-21 15:31:38,270 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 15:31:41,575 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582706.002700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 4.02 does not match target of 10.0', 'ts': '1608582706.002700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:31:41,465 - root - WARNING - current pH reading of 4.02 does not match target of 10.0
+2020-12-21 15:31:41,680 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582706.002800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *3*:  set_flow-open_circuit', 'ts': '1608582706.002800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:31:41,584 - root - INFO - location *3*:  set_flow-open_circuit
+2020-12-21 15:31:41,815 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 15:31:42,084 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-12-21 15:31:42,176 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582707.002900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608582707.002900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:31:42,085 - root - INFO - running set_flow
+2020-12-21 15:31:42,176 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 15:31:42,262 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608582707.003000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608582707.003000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:31:42,177 - root - INFO - running open_circuit
+2020-12-21 15:31:42,263 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 15:40:37,024 - asdc.sdc.potentiostat - DEBUG - stopping experiment early
+2020-12-21 15:40:38,095 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 15:40:38,280 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608583243.003100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': 1.893537192627433e-05, 'rms': 0.002656344813977035, 'spike': 0.014108479022979736, 'stop time': 570}", 'ts': '1608583243.003100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:40:38,142 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 1.893537192627433e-05, 'rms': 0.002656344813977035, 'spike': 0.014108479022979736, 'stop time': 570}
+2020-12-21 15:40:38,500 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,529 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,575 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,606 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,621 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,677 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 15:40:38,747 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 15:40:39,763 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 793
+2020-12-21 15:40:41,062 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608583246.003500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 3: set_flow-open_circuit', 'ts': '1608583246.003500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:40:40,950 - root - INFO - finished experiment 3: set_flow-open_circuit
+2020-12-21 15:40:41,063 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -30}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"H2SO4": 0.001, "K2SO4": 0.999}, "purge_time": 120}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 15:40:41,203 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608583246.003600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'H2SO4': 0.022, 'K2SO4': 21.978}", 'ts': '1608583246.003600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:40:41,063 - root - INFO - solution push target: {'H2SO4': 0.022, 'K2SO4': 21.978}
+2020-12-21 15:40:42,214 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 15:40:43,214 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 15:40:44,214 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 15:40:45,215 - asdc.sdc.pump - DEBUG - ivolume: 
+01:51.7128 ml
+01:
+2020-12-21 15:40:46,216 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 15:40:47,216 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6471 ml
+02:
+2020-12-21 15:40:47,355 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608583252.003700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 8.287199999999999, 'H2SO4': 24.3529}", 'ts': '1608583252.003700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:40:47,216 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 8.287199999999999, 'H2SO4': 24.3529}
+2020-12-21 15:40:47,516 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608583252.003800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'Refill and reset syringes: K2SO4 (pump 1)', 'ts': '1608583252.003800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 15:40:47,355 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-12-21 16:02:29,248 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 16:02:30,249 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 16:02:31,251 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 16:02:32,251 - asdc.sdc.pump - DEBUG - ivolume: 
+01:0 ul
+01:
+2020-12-21 16:02:33,252 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 16:02:34,252 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6471 ml
+02:
+2020-12-21 16:02:34,253 - root - DEBUG - starting droplet workflow
+2020-12-21 16:02:37,185 - root - DEBUG - cleaning up...
+2020-12-21 16:03:09,137 - root - DEBUG - target coordinites: [29.99969864 24.804245    0.        ]
+2020-12-21 16:03:09,400 - root - DEBUG - position update: [ 9.99995232e-03 -1.25122070e-06  0.00000000e+00] (mm)
+2020-12-21 16:03:13,071 - root - DEBUG - stage position: [0.02999984550476074, 0.02480449676513672, 0.011509159088134765]
+2020-12-21 16:03:14,055 - root - DEBUG - starting rinse
+2020-12-21 16:03:16,545 - root - DEBUG - filling droplet
+2020-12-21 16:03:24,369 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 16:03:25,920 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 16:03:30,263 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:03:30,263 - root - DEBUG - purging solution
+2020-12-21 16:05:36,542 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 16:05:39,248 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608584744.003900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 3.91 does not match target of 10.0', 'ts': '1608584744.003900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:05:39,071 - root - WARNING - current pH reading of 3.91 does not match target of 10.0
+2020-12-21 16:05:39,345 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608584744.004000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *4*:  set_flow-open_circuit', 'ts': '1608584744.004000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:05:39,259 - root - INFO - location *4*:  set_flow-open_circuit
+2020-12-21 16:05:39,460 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:05:39,752 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'H2SO4': 0.001, 'K2SO4': 0.999}, 'purge_time': 120}
+2020-12-21 16:05:39,855 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608584744.004100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608584744.004100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:05:39,752 - root - INFO - running set_flow
+2020-12-21 16:05:39,855 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 16:05:39,944 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608584744.004200', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608584744.004200', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:05:39,856 - root - INFO - running open_circuit
+2020-12-21 16:05:39,947 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 16:14:07,307 - asdc.sdc.potentiostat - DEBUG - stopping experiment early
+2020-12-21 16:14:08,360 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 16:14:08,676 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585253.004300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': 6.7277413326752254e-06, 'rms': 0.0016200632846771355, 'spike': 0.008894503116607666, 'stop time': 660}", 'ts': '1608585253.004300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:14:08,476 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 6.7277413326752254e-06, 'rms': 0.0016200632846771355, 'spike': 0.008894503116607666, 'stop time': 660}
+2020-12-21 16:14:08,828 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:08,868 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:08,935 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:08,963 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:08,982 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:09,042 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:14:09,113 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 16:14:09,911 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 776
+2020-12-21 16:14:11,190 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585256.004700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 4: set_flow-open_circuit', 'ts': '1608585256.004700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:14:11,098 - root - INFO - finished experiment 4: set_flow-open_circuit
+2020-12-21 16:14:11,190 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -40}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"K2SO4": 1}, "purge_time": 120}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 16:14:11,280 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585256.004800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'K2SO4': 22.0}", 'ts': '1608585256.004800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:14:11,191 - root - INFO - solution push target: {'K2SO4': 22.0}
+2020-12-21 16:14:12,292 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 16:14:13,292 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 16:14:14,292 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 16:14:15,294 - asdc.sdc.pump - DEBUG - ivolume: 
+01:23.5325 ml
+01:
+2020-12-21 16:14:16,294 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 16:14:17,295 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 16:14:17,387 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585262.004900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 36.4675, 'H2SO4': 24.3292}", 'ts': '1608585262.004900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:14:17,295 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 36.4675, 'H2SO4': 24.3292}
+2020-12-21 16:14:17,387 - root - DEBUG - starting droplet workflow
+2020-12-21 16:14:20,360 - root - DEBUG - cleaning up...
+2020-12-21 16:14:52,371 - root - DEBUG - target coordinites: [39.99969864 24.804245    0.        ]
+2020-12-21 16:14:52,628 - root - DEBUG - position update: [ 9.99955368e-03 -1.48773193e-07  0.00000000e+00] (mm)
+2020-12-21 16:14:56,334 - root - DEBUG - stage position: [0.039999244689941406, 0.024803943634033203, 0.011509109497070312]
+2020-12-21 16:14:57,323 - root - DEBUG - starting rinse
+2020-12-21 16:14:59,790 - root - DEBUG - filling droplet
+2020-12-21 16:15:07,376 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 16:15:08,899 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 16:15:13,348 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:15:13,350 - root - DEBUG - purging solution
+2020-12-21 16:17:19,385 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 16:17:22,081 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585447.005000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 4.08 does not match target of 10.0', 'ts': '1608585447.005000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:17:21,969 - root - WARNING - current pH reading of 4.08 does not match target of 10.0
+2020-12-21 16:17:22,177 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585447.005100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *5*:  set_flow-open_circuit', 'ts': '1608585447.005100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:17:22,089 - root - INFO - location *5*:  set_flow-open_circuit
+2020-12-21 16:17:22,299 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:17:22,569 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'K2SO4': 1}, 'purge_time': 120}
+2020-12-21 16:17:22,654 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585447.005200', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608585447.005200', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:17:22,569 - root - INFO - running set_flow
+2020-12-21 16:17:22,654 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 16:17:22,803 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608585447.005300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608585447.005300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:17:22,654 - root - INFO - running open_circuit
+2020-12-21 16:17:22,806 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 16:27:01,862 - asdc.sdc.potentiostat - DEBUG - stopping experiment early
+2020-12-21 16:27:02,934 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 16:27:03,134 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586028.005400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -2.0989486195088222e-06, 'rms': 0.0017946906888939942, 'spike': 0.010121285915374756, 'stop time': 480}", 'ts': '1608586028.005400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:27:02,980 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -2.0989486195088222e-06, 'rms': 0.0017946906888939942, 'spike': 0.010121285915374756, 'stop time': 480}
+2020-12-21 16:27:03,361 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,393 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,444 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,476 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,496 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,556 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:27:03,623 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 16:27:05,217 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 768
+2020-12-21 16:27:06,532 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586031.005800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 5: set_flow-open_circuit', 'ts': '1608586031.005800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:27:06,407 - root - INFO - finished experiment 5: set_flow-open_circuit
+2020-12-21 16:27:06,532 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -50}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"KOH": 0.001, "K2SO4": 0.999}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 16:27:06,655 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586031.005900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'KOH': 0.0165, 'K2SO4': 16.483500000000003}", 'ts': '1608586031.005900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:27:06,534 - root - INFO - solution push target: {'KOH': 0.0165, 'K2SO4': 16.483500000000003}
+2020-12-21 16:27:07,667 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 16:27:08,667 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 16:27:09,667 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 16:27:10,667 - asdc.sdc.pump - DEBUG - ivolume: 
+01:47.0972 ml
+01:
+2020-12-21 16:27:11,667 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 16:27:12,667 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 16:27:12,808 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586037.006000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 60.0, 'K2SO4': 12.9028, 'H2SO4': 24.3292}", 'ts': '1608586037.006000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:27:12,667 - root - INFO - current solution levels: {'KOH': 60.0, 'K2SO4': 12.9028, 'H2SO4': 24.3292}
+2020-12-21 16:27:12,920 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586037.006100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'Refill and reset syringes: K2SO4 (pump 1)', 'ts': '1608586037.006100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:27:12,809 - root - WARNING - Refill and reset syringes: K2SO4 (pump 1)
+2020-12-21 16:29:43,548 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 16:29:44,548 - asdc.sdc.pump - DEBUG - ivolume: 
+00:0 ul
+00:
+2020-12-21 16:29:45,548 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 16:29:46,548 - asdc.sdc.pump - DEBUG - ivolume: 
+01:0 ul
+01:
+2020-12-21 16:29:47,548 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 16:29:48,548 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 16:29:48,549 - root - DEBUG - starting droplet workflow
+2020-12-21 16:29:51,536 - root - DEBUG - cleaning up...
+2020-12-21 16:30:23,561 - root - DEBUG - target coordinites: [49.99969864 24.804245    0.        ]
+2020-12-21 16:30:23,875 - root - DEBUG - position update: [1.00002060e-02 3.50952148e-07 0.00000000e+00] (mm)
+2020-12-21 16:30:27,529 - root - DEBUG - stage position: [0.04999919509887695, 0.024804893493652343, 0.011509359359741211]
+2020-12-21 16:30:28,555 - root - DEBUG - starting rinse
+2020-12-21 16:30:31,028 - root - DEBUG - filling droplet
+2020-12-21 16:30:38,828 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 16:30:40,384 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 16:30:44,740 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:30:44,742 - root - DEBUG - purging solution
+2020-12-21 16:32:20,992 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 16:32:23,540 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586348.006200', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading is 9.83 (target is 10.0)', 'ts': '1608586348.006200', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:32:23,377 - root - INFO - current pH reading is 9.83 (target is 10.0)
+2020-12-21 16:32:23,643 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586348.006300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *6*:  set_flow-open_circuit', 'ts': '1608586348.006300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:32:23,549 - root - INFO - location *6*:  set_flow-open_circuit
+2020-12-21 16:32:23,729 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:32:24,019 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.001, 'K2SO4': 0.999}, 'purge_time': 90}
+2020-12-21 16:32:24,128 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586349.006400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608586349.006400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:32:24,019 - root - INFO - running set_flow
+2020-12-21 16:32:24,128 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 16:32:24,236 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586349.006500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608586349.006500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:32:24,128 - root - INFO - running open_circuit
+2020-12-21 16:32:24,239 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 16:40:15,150 - asdc.sdc.potentiostat - DEBUG - stopping experiment early
+2020-12-21 16:40:16,200 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 16:40:16,369 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586821.006600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -2.4039888237897068e-05, 'rms': 0.0013500735037429111, 'spike': 0.00490725040435791, 'stop time': 480}", 'ts': '1608586821.006600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:40:16,241 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -2.4039888237897068e-05, 'rms': 0.0013500735037429111, 'spike': 0.00490725040435791, 'stop time': 480}
+2020-12-21 16:40:16,585 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,614 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,660 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,687 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,704 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,761 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 16:40:16,825 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 16:40:17,720 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 791
+2020-12-21 16:40:19,499 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586824.007000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 6: set_flow-open_circuit', 'ts': '1608586824.007000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:40:18,926 - root - INFO - finished experiment 6: set_flow-open_circuit
+2020-12-21 16:40:19,500 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -60}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"KOH": 0.01, "K2SO4": 0.99}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 16:40:19,590 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586824.007100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'KOH': 0.165, 'K2SO4': 16.335}", 'ts': '1608586824.007100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:40:19,500 - root - INFO - solution push target: {'KOH': 0.165, 'K2SO4': 16.335}
+2020-12-21 16:40:20,598 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 16:40:21,598 - asdc.sdc.pump - DEBUG - ivolume: 
+00:18.1312 ul
+00:
+2020-12-21 16:40:22,598 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 16:40:23,598 - asdc.sdc.pump - DEBUG - ivolume: 
+01:18.0414 ml
+01:
+2020-12-21 16:40:24,598 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 16:40:25,598 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 16:40:25,740 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586830.007200', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 59.9818688, 'K2SO4': 41.958600000000004, 'H2SO4': 24.3292}", 'ts': '1608586830.007200', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:40:25,598 - root - INFO - current solution levels: {'KOH': 59.9818688, 'K2SO4': 41.958600000000004, 'H2SO4': 24.3292}
+2020-12-21 16:40:25,742 - root - DEBUG - starting droplet workflow
+2020-12-21 16:40:28,672 - root - DEBUG - cleaning up...
+2020-12-21 16:41:00,624 - root - DEBUG - target coordinites: [59.99969864 24.804245    0.        ]
+2020-12-21 16:41:00,875 - root - DEBUG - position update: [ 9.99970627e-03 -9.99450684e-07  0.00000000e+00] (mm)
+2020-12-21 16:41:04,528 - root - DEBUG - stage position: [0.059999942779541016, 0.024804595947265626, 0.011509209632873536]
+2020-12-21 16:41:05,520 - root - DEBUG - starting rinse
+2020-12-21 16:41:07,976 - root - DEBUG - filling droplet
+2020-12-21 16:41:15,828 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 16:41:17,388 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 16:41:21,767 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:41:21,767 - root - DEBUG - purging solution
+2020-12-21 16:42:57,987 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 16:43:00,820 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586985.007500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 10.69 does not match target of 10.0', 'ts': '1608586985.007500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:43:00,672 - root - WARNING - current pH reading of 10.69 does not match target of 10.0
+2020-12-21 16:43:00,924 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586985.007600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *7*:  set_flow-open_circuit', 'ts': '1608586985.007600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:43:00,828 - root - INFO - location *7*:  set_flow-open_circuit
+2020-12-21 16:43:01,086 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 16:43:01,375 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.01, 'K2SO4': 0.99}, 'purge_time': 90}
+2020-12-21 16:43:01,516 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586986.007700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608586986.007700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:43:01,376 - root - INFO - running set_flow
+2020-12-21 16:43:01,516 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 16:43:01,615 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608586986.007800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608586986.007800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 16:43:01,516 - root - INFO - running open_circuit
+2020-12-21 16:43:01,616 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 17:13:03,339 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 17:13:03,618 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588788.007900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -9.063289387395204e-06, 'rms': 0.00627916746299219, 'spike': 0.05398029088973999, 'stop time': 750}", 'ts': '1608588788.007900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:13:03,479 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -9.063289387395204e-06, 'rms': 0.00627916746299219, 'spike': 0.05398029088973999, 'stop time': 750}
+2020-12-21 17:13:03,841 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:03,872 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:03,926 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:03,955 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:03,971 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:04,036 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:13:04,099 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 17:13:04,815 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 738
+2020-12-21 17:13:06,328 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588791.008300', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 7: set_flow-open_circuit', 'ts': '1608588791.008300', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:13:06,003 - root - INFO - finished experiment 7: set_flow-open_circuit
+2020-12-21 17:13:06,328 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -70}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"KOH": 0.1, "K2SO4": 0.9}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 17:13:06,427 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588791.008400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'KOH': 1.6500000000000001, 'K2SO4': 14.85}", 'ts': '1608588791.008400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:13:06,328 - root - INFO - solution push target: {'KOH': 1.6500000000000001, 'K2SO4': 14.85}
+2020-12-21 17:13:07,438 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 17:13:08,438 - asdc.sdc.pump - DEBUG - ivolume: 
+00:198.737 ul
+00:
+2020-12-21 17:13:09,438 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 17:13:10,438 - asdc.sdc.pump - DEBUG - ivolume: 
+01:35.9168 ml
+01:
+2020-12-21 17:13:11,438 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 17:13:12,438 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 17:13:12,544 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588797.008500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 59.801263, 'K2SO4': 24.083199999999998, 'H2SO4': 24.3292}", 'ts': '1608588797.008500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:13:12,438 - root - INFO - current solution levels: {'KOH': 59.801263, 'K2SO4': 24.083199999999998, 'H2SO4': 24.3292}
+2020-12-21 17:13:12,544 - root - DEBUG - starting droplet workflow
+2020-12-21 17:13:15,398 - root - DEBUG - cleaning up...
+2020-12-21 17:13:47,316 - root - DEBUG - target coordinites: [69.99969864 24.804245    0.        ]
+2020-12-21 17:13:47,563 - root - DEBUG - position update: [ 9.99885559e-03 -4.00543213e-07  0.00000000e+00] (mm)
+2020-12-21 17:13:51,219 - root - DEBUG - stage position: [0.0699993896484375, 0.024804244995117186, 0.011509359359741211]
+2020-12-21 17:13:52,241 - root - DEBUG - starting rinse
+2020-12-21 17:13:54,737 - root - DEBUG - filling droplet
+2020-12-21 17:14:02,577 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 17:14:04,097 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 17:14:08,569 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 17:14:08,571 - root - DEBUG - purging solution
+2020-12-21 17:15:44,801 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 17:15:47,694 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588952.008600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading is 10.45 (target is 10.0)', 'ts': '1608588952.008600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:15:47,574 - root - INFO - current pH reading is 10.45 (target is 10.0)
+2020-12-21 17:15:47,795 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588952.008700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *8*:  set_flow-open_circuit', 'ts': '1608588952.008700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:15:47,703 - root - INFO - location *8*:  set_flow-open_circuit
+2020-12-21 17:15:47,930 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 17:15:48,222 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 0.1, 'K2SO4': 0.9}, 'purge_time': 90}
+2020-12-21 17:15:48,421 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588953.008800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608588953.008800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:15:48,222 - root - INFO - running set_flow
+2020-12-21 17:15:48,422 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 17:15:48,524 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608588953.008900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608588953.008900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:15:48,422 - root - INFO - running open_circuit
+2020-12-21 17:15:48,528 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 17:45:50,960 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 17:45:51,241 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590756.009000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': -0.00029655334328277636, 'rms': 0.010302867424811242, 'spike': 0.0404852032661438, 'stop time': 930}", 'ts': '1608590756.009000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:45:51,105 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': -0.00029655334328277636, 'rms': 0.010302867424811242, 'spike': 0.0404852032661438, 'stop time': 930}
+2020-12-21 17:45:51,506 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,545 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,598 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,627 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,643 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,700 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:45:51,783 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 17:45:52,547 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 782
+2020-12-21 17:45:53,835 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590758.009400', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 8: set_flow-open_circuit', 'ts': '1608590758.009400', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:45:53,732 - root - INFO - finished experiment 8: set_flow-open_circuit
+2020-12-21 17:45:53,835 - root - DEBUG - [{"intent": "corrosion", "x": 0, "y": -80}, {"op": "set_flow", "pH": 10, "flow_rate": 1.25, "relative_rates": {"KOH": 1}, "purge_time": 90}, {"op": "open_circuit", "duration": 1800, "stabilization_range": 0.002, "stabilization_window": 90, "minimum_duration": 300, "smoothing_window": 10}]
+2020-12-21 17:45:53,924 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590758.009500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "solution push target: {'KOH': 16.5}", 'ts': '1608590758.009500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:45:53,835 - root - INFO - solution push target: {'KOH': 16.5}
+2020-12-21 17:45:54,936 - asdc.sdc.pump - DEBUG - tvolume: 
+00:60 ml
+00:
+2020-12-21 17:45:55,936 - asdc.sdc.pump - DEBUG - ivolume: 
+00:2.00456 ml
+00:
+2020-12-21 17:45:56,936 - asdc.sdc.pump - DEBUG - tvolume: 
+01:60 ml
+01:
+2020-12-21 17:45:57,936 - asdc.sdc.pump - DEBUG - ivolume: 
+01:52.1685 ml
+01:
+2020-12-21 17:45:58,936 - asdc.sdc.pump - DEBUG - tvolume: 
+02:45 ml
+02:
+2020-12-21 17:45:59,936 - asdc.sdc.pump - DEBUG - ivolume: 
+02:20.6708 ml
+02:
+2020-12-21 17:46:00,078 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590765.009600', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "current solution levels: {'KOH': 57.99544, 'K2SO4': 7.831499999999998, 'H2SO4': 24.3292}", 'ts': '1608590765.009600', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:45:59,936 - root - INFO - current solution levels: {'KOH': 57.99544, 'K2SO4': 7.831499999999998, 'H2SO4': 24.3292}
+2020-12-21 17:46:00,078 - root - DEBUG - starting droplet workflow
+2020-12-21 17:46:02,967 - root - DEBUG - cleaning up...
+2020-12-21 17:46:34,963 - root - DEBUG - target coordinites: [79.99969864 24.804245    0.        ]
+2020-12-21 17:46:35,226 - root - DEBUG - position update: [9.99946213e-03 1.48773193e-07 0.00000000e+00] (mm)
+2020-12-21 17:46:38,899 - root - DEBUG - stage position: [0.07999964141845703, 0.02480484390258789, 0.01150965976715088]
+2020-12-21 17:46:39,930 - root - DEBUG - starting rinse
+2020-12-21 17:46:42,431 - root - DEBUG - filling droplet
+2020-12-21 17:46:50,003 - root - DEBUG - differentially pumping to shrink the droplet
+2020-12-21 17:46:51,542 - root - DEBUG - equalizing differential pumping rate
+2020-12-21 17:46:55,904 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 17:46:55,904 - root - DEBUG - purging solution
+2020-12-21 17:48:31,895 - root - DEBUG - stepping flow rates to 1.25
+2020-12-21 17:48:34,259 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590919.009700', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'current pH reading of 12.18 does not match target of 10.0', 'ts': '1608590919.009700', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:48:34,145 - root - WARNING - current pH reading of 12.18 does not match target of 10.0
+2020-12-21 17:48:34,364 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590919.009800', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'location *9*:  set_flow-open_circuit', 'ts': '1608590919.009800', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:48:34,267 - root - INFO - location *9*:  set_flow-open_circuit
+2020-12-21 17:48:34,467 - asyncio - DEBUG - Using selector: SelectSelector
+2020-12-21 17:48:34,736 - root - DEBUG - running {'op': 'set_flow', 'pH': 10, 'flow_rate': 1.25, 'relative_rates': {'KOH': 1}, 'purge_time': 90}
+2020-12-21 17:48:34,844 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590919.009900', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running set_flow', 'ts': '1608590919.009900', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:48:34,736 - root - INFO - running set_flow
+2020-12-21 17:48:34,844 - root - DEBUG - running {'op': 'open_circuit', 'duration': 1800, 'stabilization_range': 0.002, 'stabilization_window': 90, 'minimum_duration': 300, 'smoothing_window': 10}
+2020-12-21 17:48:34,937 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608590919.010000', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'running open_circuit', 'ts': '1608590919.010000', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:48:34,844 - root - INFO - running open_circuit
+2020-12-21 17:48:34,939 - asdc.sdc.experiment_defaults - DEBUG - running OpenCircuitArgs: 1,1800,NONE,<,0,NONE,<,0,2MA,AUTO,AUTO,AUTO,EXTERNAL,AUTO,AUTO,AUTO
+2020-12-21 17:53:35,777 - asdc.sdc.potentiostat - DEBUG - stopping experiment early
+2020-12-21 17:53:36,828 - asdc.sdc.potentiostat - DEBUG - finished running experiment
+2020-12-21 17:53:36,976 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608591222.010100', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': "OCP check: {'average_slope': 4.383700443030606e-06, 'rms': 0.0007243510715059459, 'spike': 0.0024535655975341797, 'stop time': 390}", 'ts': '1608591222.010100', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:53:36,855 - asdc.analysis.ocp - INFO - OCP check: {'average_slope': 4.383700443030606e-06, 'rms': 0.0007243510715059459, 'spike': 0.0024535655975341797, 'stop time': 390}
+2020-12-21 17:53:37,253 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,278 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,327 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,356 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,372 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,436 - matplotlib.axes._base - DEBUG - update_title_pos
+2020-12-21 17:53:37,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): slack.com:443
+2020-12-21 17:53:38,336 - urllib3.connectionpool - DEBUG - https://slack.com:443 "POST /api/files.upload HTTP/1.1" 200 795
+2020-12-21 17:53:39,625 - slack.web.slack_response - DEBUG - Received the following response: {'ok': True, 'channel': 'CDW5JFZAR', 'ts': '1608591224.010500', 'message': {'type': 'message', 'subtype': 'bot_message', 'text': 'finished experiment 9: set_flow-open_circuit', 'ts': '1608591224.010500', 'username': 'sdc', 'icons': {'emoji': ':sciencebear:'}, 'bot_id': 'BJ3U0H0A0'}}
+2020-12-21 17:53:39,523 - root - INFO - finished experiment 9: set_flow-open_circuit

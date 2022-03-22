@@ -1,0 +1,3 @@
+timestamp,pH,pH_unit,mV,mV_unit,temperature,temperature_unit,slope,slope_unit
+2020-11-24 16:32:50.945,12.26,pH,-287.1,mV,25.0,C,91.9,%
+2020-11-24 16:32:56.348,12.27,pH,-287.8,mV,25.0,C,91.9,%
