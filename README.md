@@ -6,6 +6,7 @@ To process the raw electrochemical data and generate a table of results:
 ```sh
 python scripts/generate_report.py
 ```
+Jupyter notebooks with data wrangling and plotting code are provided in the notebooks folder.
 
 ## Contact Information
 - Howie Joress, @hjoress
