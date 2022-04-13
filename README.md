@@ -26,8 +26,8 @@ Jupyter notebooks with data wrangling and plotting code are provided in the note
 We're currently using [git-subrepo](https://github.com/ingydotnet/git-subrepo) to include shared automation and data analysis libraries.
 
 These include:
-- [autoSDC/] our scanning droplet cell library (https://github.com /usnistgov/autoSDC)
+- [autoSDC/](autoSDC-ZnNi-corr/tree/main/autoSDC) our scanning droplet cell library (https://github.com /usnistgov/autoSDC)
 
-- [tafel-fitter/] Tafel analysis library (https://github.com/usnistgov/tafel-fitter, which is a fork of https://github.com/MEG-LBNL/Tafel_Fitter).
+- [tafel-fitter/](autoSDC-ZnNi-corr/tree/main/tafel-fitter) Tafel analysis library (https://github.com/usnistgov/tafel-fitter, which is a fork of https://github.com/MEG-LBNL/Tafel_Fitter).
 
 This repository is subject to the [NIST Disclaimer of Warranty](LICENSE.md).
