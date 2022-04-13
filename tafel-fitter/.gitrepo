@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:usnistgov/tafel-fitter
+	branch = master
+	commit = 9e7f8986248207fd5dcf5b989a4c97eaed7d599c
+	parent = 4539448c53e6b42e8732a455686467ab6608bcf2
+	method = merge
+	cmdver = 0.4.3
