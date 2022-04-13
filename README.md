@@ -1,6 +1,7 @@
-# ZnNi pH series
+Development of an Automated Millifluidic Platform and Data-Analysis Pipeline for Rapid Electrochemical Corrosion Measurements: A Ph Study on Zn-Ni
+===================================================================
 
-This is a paper companion repository containing data analysis and visualization code reproducing the analysis in our Zn-Ni pH series work.
+This is a paper companion repository containing data analysis and visualization code reproducing the analysis in [our Zn-Ni pH series work](https://dx.doi.org/10.2139/ssrn.4075907).
 
 To process the raw electrochemical data and generate a table of results:
 ```sh
