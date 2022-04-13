@@ -23,7 +23,11 @@ Jupyter notebooks with data wrangling and plotting code are provided in the note
 
 
 ## Third-Party Dependencies
+We're currently using [git-subrepo](https://github.com/ingydotnet/git-subrepo) to include shared automation and data analysis libraries.
 
-Software dependencies include our scanning droplet cell library (https://github.com /usnistgov/a-sdc) and a Tafel analysis library (https://github.com/usnistgov/tafel-fitter, which is a fork of https://github.com/MEG-LBNL/Tafel_Fitter).
+These include:
+- [./autoSDC] our scanning droplet cell library (https://github.com /usnistgov/autoSDC)
+
+- [./tafel-fitter] Tafel analysis library (https://github.com/usnistgov/tafel-fitter, which is a fork of https://github.com/MEG-LBNL/Tafel_Fitter).
 
 This repository is subject to the [NIST Disclaimer of Warranty](LICENSE.md).
